@@ -1,0 +1,12 @@
+{
+  "name": "FOLIX-LAB — Premium Fahrzeugfolierung München",
+  "short_name": "FOLIX-LAB",
+  "description": "Premium Fahrzeugfolierung, PPF-Lackschutz und Werbetechnik in München.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08090b",
+  "theme_color": "#08090b",
+  "icons": [
+    { "src": "/assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

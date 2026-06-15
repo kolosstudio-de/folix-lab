@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="de" data-lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08090b" />
+
+  <title data-i18n="meta.title">FOLIX-LAB — Преміальне оклеювання та захист авто · Мюнхен</title>
+  <meta name="description" data-i18n="meta.desc" content="FOLIX-LAB — студія преміального оклеювання авто в Мюнхені. Повна та часткова оклейка, PPF-захист лаку, рекламне брендування. Професійні плівки, індивідуальний підхід." />
+  <meta name="keywords" content="Folierung München, Fahrzeugfolierung, PPF, Car Wrapping, оклейка авто, захист лаку, Werbetechnik, FOLIX-LAB" />
+  <meta name="author" content="FOLIX-LAB" />
+  <link rel="canonical" href="https://folix-lab.de/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FOLIX-LAB" />
+  <meta property="og:title" data-i18n="meta.title" content="FOLIX-LAB — Преміальне оклеювання та захист авто · Мюнхен" />
+  <meta property="og:description" data-i18n="meta.desc" content="Студія преміального оклеювання авто в Мюнхені. Повна оклейка, PPF-захист, брендування." />
+  <meta property="og:image" content="https://folix-lab.de/assets/img/hero.jpg" />
+  <meta property="og:url" content="https://folix-lab.de/" />
+  <meta property="og:locale" content="uk_UA" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="ru_RU" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- hreflang (single-page JS switch; ready for per-locale URLs later) -->
+  <link rel="alternate" hreflang="uk" href="https://folix-lab.de/?lang=uk" />
+  <link rel="alternate" hreflang="de" href="https://folix-lab.de/?lang=de" />
+  <link rel="alternate" hreflang="ru" href="https://folix-lab.de/?lang=ru" />
+  <link rel="alternate" hreflang="en" href="https://folix-lab.de/?lang=en" />
+  <link rel="alternate" hreflang="x-default" href="https://folix-lab.de/" />
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- Self-hosted fonts — DSGVO-konform, keine externen Requests (Unbounded · Manrope · JetBrains Mono) -->
+  <link rel="stylesheet" href="assets/css/fonts.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- JSON-LD: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoBodyShop",
+    "name": "FOLIX-LAB",
+    "description": "Premium Fahrzeugfolierung, PPF-Lackschutz und Werbetechnik in München.",
+    "image": "https://folix-lab.de/assets/img/hero.jpg",
+    "url": "https://folix-lab.de/",
+    "email": "info@folix-lab.de",
+    "telephone": "+4917684569888",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Atterseestraße 15",
+      "postalCode": "81241",
+      "addressLocality": "München",
+      "addressCountry": "DE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 48.1447, "longitude": 11.4612 },
+    "areaServed": "München",
+    "priceRange": "€€€",
+    "makesOffer": [
+      { "@type": "Offer", "name": "Vollfolierung" },
+      { "@type": "Offer", "name": "PPF Lackschutz" },
+      { "@type": "Offer", "name": "Teilfolierung / Custom Details" },
+      { "@type": "Offer", "name": "Werbetechnik" }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Texture & atmosphere overlays -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"></span></div>
+
+  <!-- Page load curtain -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__mark">
+      <span class="loader__f">F</span>
+      <span class="loader__bar"></span>
+    </div>
+    <div class="loader__word">FOLIX-LAB</div>
+  </div>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <a href="index.html" class="nav__logo" aria-label="FOLIX-LAB">
+      <svg class="logo" viewBox="0 0 34 34" aria-hidden="true">
+        <defs>
+          <linearGradient id="iri" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#08cf8e"/>
+            <stop offset="0.4" stop-color="#21e39a"/>
+            <stop offset="0.7" stop-color="#79efa1"/>
+            <stop offset="1" stop-color="#c4f24a"/>
+          </linearGradient>
+        </defs>
+        <path d="M5 4 H29 L24 10 H11 V15 H22 L18 21 H11 V30 H5 Z" fill="url(#iri)"/>
+        <path d="M5 4 H29 L24 10 H11 V15 H22 L18 21 H11 V30 H5 Z" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="0.5"/>
+      </svg>
+      <span class="nav__name">FOLIX<span class="nav__name-dash">-</span>LAB</span>
+    </a>
+
+    <!-- Site Switcher -->
+    <div class="site-switch">
+      <a href="car-wrapping.html" class="site-switch__btn site-switch__btn--wrap is-active">
+        <span class="site-switch__dot"></span>
+        <span class="site-switch__text">Wrapping</span>
+      </a>
+      <a href="werbetechnik.html" class="site-switch__btn site-switch__btn--werbe">
+        <span class="site-switch__dot"></span>
+        <span class="site-switch__text">Werbetechnik</span>
+      </a>
+    </div>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#services" data-i18n="nav.services">Послуги</a>
+      <a href="#process" data-i18n="nav.process">Процес</a>
+      <a href="#works" data-i18n="nav.works">Роботи</a>
+      <a href="#materials" data-i18n="nav.materials">Матеріали</a>
+      <a href="#contact" data-i18n="nav.contact">Контакти</a>
+    </nav>
+
+    <div class="nav__right">
+      <div class="lang" id="lang">
+        <button class="lang__btn" aria-haspopup="listbox" aria-expanded="false">
+          <span class="lang__cur">DE</span>
+          <svg viewBox="0 0 10 6" width="10" height="6" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.3"/></svg>
+        </button>
+        <ul class="lang__menu" role="listbox">
+          <li role="option" data-set-lang="uk"><span>UA</span> Українська</li>
+          <li role="option" data-set-lang="de" class="is-active"><span>DE</span> Deutsch</li>
+          <li role="option" data-set-lang="ru"><span>RU</span> Русский</li>
+          <li role="option" data-set-lang="en"><span>EN</span> English</li>
+        </ul>
+      </div>
+      <a href="#quote" class="btn btn--solid nav__cta" data-i18n="nav.cta">Розрахувати вартість</a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero__media">
+        <video class="hero__img hero__video" autoplay muted loop playsinline preload="auto" poster="assets/img/hero.jpg" aria-hidden="true">
+          <source src="assets/img/hero.mp4" type="video/mp4" />
+        </video>
+        <div class="hero__veil"></div>
+        <div class="hero__glow"></div>
+      </div>
+
+      <div class="hero__inner">
+        <p class="eyebrow hero__eyebrow reveal">
+          <span class="eyebrow__dot"></span>
+          <span data-i18n="hero.eyebrow">Студія преміального оклеювання · Мюнхен</span>
+        </p>
+
+        <h1 class="hero__title">
+          <span class="line reveal"><span data-i18n="hero.title1">Друга шкіра</span></span>
+          <span class="line reveal"><em class="iri" data-i18n="hero.title2">для вашого авто</em></span>
+        </h1>
+
+        <p class="hero__sub reveal" data-i18n="hero.sub">
+          Професійна оклейка, PPF-захист лаку та рекламне брендування для приватних і
+          бізнес-клієнтів. Точність, якісні матеріали та бездоганний фініш.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a href="#quote" class="btn btn--solid" data-i18n="hero.cta1">Розрахувати вартість</a>
+          <a href="#works" class="btn btn--ghost" data-i18n="hero.cta2">
+            <span data-i18n="hero.cta2">Дивитись роботи</span>
+            <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" fill="none" stroke-width="1.4"/></svg>
+          </a>
+        </div>
+
+        <dl class="hero__stats reveal">
+          <div class="stat">
+            <dt class="stat__num" data-i18n="hero.stat1n">Точність</dt>
+            <dd class="stat__label" data-i18n="hero.stat1l">ретельне виконання</dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__num" data-i18n="hero.stat2n">Захист</dt>
+            <dd class="stat__label" data-i18n="hero.stat2l">PPF проти сколів</dd>
+          </div>
+          <div class="stat">
+            <dt class="stat__num" data-i18n="hero.stat3n">Дизайн</dt>
+            <dd class="stat__label" data-i18n="hero.stat3l">індивідуальні рішення</dd>
+          </div>
+        </dl>
+      </div>
+
+      <a href="#services" class="hero__scroll" aria-label="Scroll">
+        <span data-i18n="hero.scroll">Гортайте</span>
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ===================== MARQUEE / BRANDS ===================== -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Car Wrapping</span><i>✦</i>
+        <span>PPF Lackschutz</span><i>✦</i>
+        <span>Vollfolierung</span><i>✦</i>
+        <span>Teilfolierung</span><i>✦</i>
+        <span>Werbetechnik</span><i>✦</i>
+        <span>Custom Details</span><i>✦</i>
+        <span>Car Wrapping</span><i>✦</i>
+        <span>PPF Lackschutz</span><i>✦</i>
+        <span>Vollfolierung</span><i>✦</i>
+        <span>Teilfolierung</span><i>✦</i>
+        <span>Werbetechnik</span><i>✦</i>
+        <span>Custom Details</span><i>✦</i>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="services section" id="services">
+      <div class="section__head">
+        <p class="eyebrow reveal"><span class="eyebrow__dot"></span><span data-i18n="services.eyebrow">Послуги</span></p>
+        <h2 class="section__title reveal" data-i18n="services.title">Усе, що робить авто бездоганним</h2>
+        <p class="section__lead reveal" data-i18n="services.lead">
+          Від повної зміни кольору до невидимого захисту лаку — кожен проєкт виконуємо
+          з ювелірною точністю та якісними матеріалами.
+        </p>
+      </div>
+
+      <div class="svc">
+        <!-- 01 -->
+        <article class="svc__card reveal" id="svc-1">
+          <div class="svc__media"><img src="assets/img/hero.jpg" alt="Повна оклейка авто" loading="lazy" /></div>
+          <div class="svc__body">
+            <span class="svc__no">01</span>
+            <h3 class="svc__title" data-i18n="svc1.title">Повна оклейка</h3>
+            <p class="svc__text" data-i18n="svc1.text">
+              Повністю змінюємо вигляд авто: мат, глянець, сатин або індивідуальні
+              кольори. Преміальна плівка з точною обробкою, що ще й захищає
+              оригінальний лак та робить вашу появу на дорозі неповторною.
+            </p>
+            <ul class="svc__tags">
+              <li data-i18n="svc1.t1">Мат / Глянець / Сатин</li>
+              <li data-i18n="svc1.t2">Спецкольори</li>
+              <li data-i18n="svc1.t3">Захист лаку</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 02 -->
+        <article class="svc__card reveal" id="svc-2">
+          <div class="svc__media"><img src="assets/img/ppf.jpg" alt="PPF захист лаку" loading="lazy" /></div>
+          <div class="svc__body">
+            <span class="svc__no">02</span>
+            <h3 class="svc__title" data-i18n="svc2.title">PPF — захист лаку</h3>
+            <p class="svc__text" data-i18n="svc2.text">
+              Прозора плівка PPF надійно захищає лак від сколів, подряпин, дорожнього
+              бруду та щоденного зносу. Найбільш вразливі зони — бампер, капот, крила,
+              пороги — залишаються бездоганними роками. Ідеально для нових та спортивних авто.
+            </p>
+            <ul class="svc__tags">
+              <li data-i18n="svc2.t1">Анти-скол</li>
+              <li data-i18n="svc2.t2">Самовідновлення</li>
+              <li data-i18n="svc2.t3">Глянець / Мат</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 03 -->
+        <article class="svc__card reveal" id="svc-3">
+          <div class="svc__media"><img src="assets/img/colorshift.jpg" alt="Custom Details — часткова оклейка" loading="lazy" /></div>
+          <div class="svc__body">
+            <span class="svc__no">03</span>
+            <h3 class="svc__title" data-i18n="svc3.title">Custom Details</h3>
+            <p class="svc__text" data-i18n="svc3.text">
+              Часткова оклейка та індивідуальні деталі для точних акцентів. Дах,
+              дзеркала, капот, молдинги чи спеціальні дизайн-елементи — розробляємо
+              рішення під ваше авто та ваш стиль.
+            </p>
+            <ul class="svc__tags">
+              <li data-i18n="svc3.t1">Дах / Дзеркала</li>
+              <li data-i18n="svc3.t2">Color-shift</li>
+              <li data-i18n="svc3.t3">Декор-акценти</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 04 -->
+        <article class="svc__card reveal" id="svc-4">
+          <div class="svc__media"><img src="assets/img/van.jpg" alt="Werbetechnik — рекламне брендування" loading="lazy" /></div>
+          <div class="svc__body">
+            <span class="svc__no">04</span>
+            <h3 class="svc__title" data-i18n="svc4.title">Рекламне брендування</h3>
+            <p class="svc__text" data-i18n="svc4.text">
+              Перетворюємо ваш транспорт на рекламний носій, що працює. Зовнішня
+              реклама, фірмова айдентика та брендування авто для бізнесу — стильно,
+              читабельно та довговічно.
+            </p>
+            <ul class="svc__tags">
+              <li data-i18n="svc4.t1">Брендування авто</li>
+              <li data-i18n="svc4.t2">Cut-плоттер</li>
+              <li data-i18n="svc4.t3">Друк / Дизайн</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== PROCESS ===================== -->
+    <section class="process section" id="process">
+      <div class="section__head">
+        <p class="eyebrow reveal"><span class="eyebrow__dot"></span><span data-i18n="process.eyebrow">Як ми працюємо</span></p>
+        <h2 class="section__title reveal" data-i18n="process.title">Процес без компромісів</h2>
+      </div>
+
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step__no">01</span>
+          <h3 class="step__title" data-i18n="step1.title">Консультація</h3>
+          <p class="step__text" data-i18n="step1.text">Обговорюємо ідею, оглядаємо авто та підбираємо оптимальне рішення.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__no">02</span>
+          <h3 class="step__title" data-i18n="step2.title">Підбір плівки та прорахунок</h3>
+          <p class="step__text" data-i18n="step2.text">Зразки кольорів і фактур, прозорий кошторис без прихованих витрат.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__no">03</span>
+          <h3 class="step__title" data-i18n="step3.title">Підготовка та оклейка</h3>
+          <p class="step__text" data-i18n="step3.text">Глибока мийка, знежирення, демонтаж елементів і точна оклейка майстром.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__no">04</span>
+          <h3 class="step__title" data-i18n="step4.title">Контроль і видача</h3>
+          <p class="step__text" data-i18n="step4.text">Перевірка кожного шва, фінальна детейлінг-обробка та догляд-рекомендації.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===================== WORKS / GALLERY ===================== -->
+    <section class="works section" id="works">
+      <div class="section__head">
+        <p class="eyebrow reveal"><span class="eyebrow__dot"></span><span data-i18n="works.eyebrow">Портфоліо</span></p>
+        <h2 class="section__title reveal" data-i18n="works.title">Вибрані роботи</h2>
+        <p class="section__lead reveal" data-i18n="works.lead">Кожен проєкт — це деталі, які видно зблизька.</p>
+      </div>
+
+      <div class="showroom-showcase">
+        <!-- Before/After Slider -->
+        <div class="ba-slider reveal">
+          <!-- The 'after' image goes in the background -->
+          <img class="ba-slider__after" src="assets/img/before-after/after.jpg" alt="After Wrap" loading="lazy" />
+          <!-- The 'before' image sits on top and is clipped -->
+          <img class="ba-slider__before" src="assets/img/before-after/before.jpg" alt="Before Wrap" loading="lazy" />
+          <div class="ba-slider__handle"></div>
+        </div>
+        
+        <!-- Video Showcase -->
+        <div class="showroom-video-block reveal">
+          <video src="assets/video/showroom_video.mp4" muted loop autoplay playsinline></video>
+        </div>
+      </div>
+
+      <div class="showroom-grid">
+        <div class="showroom-item showroom-item--wide reveal" data-type="image" data-src="assets/img/hero.jpg" data-caption="Повна оклейка спорткара · Satin Black">
+          <img src="assets/img/hero.jpg" alt="Satin Black Wrap" loading="lazy" />
+          <div class="showroom-item__overlay"><span>View Image</span></div>
+        </div>
+
+        <div class="showroom-item reveal" data-type="image" data-src="assets/img/ppf.jpg" data-caption="Нанесення PPF плівки на капот">
+          <img src="assets/img/ppf.jpg" alt="PPF Application" loading="lazy" />
+          <div class="showroom-item__overlay"><span>View Image</span></div>
+        </div>
+
+        <div class="showroom-item reveal" data-type="image" data-src="assets/img/colorshift.jpg" data-caption="Custom деталі · Color-Shift">
+          <img src="assets/img/colorshift.jpg" alt="Color Shift Wrap" loading="lazy" />
+          <div class="showroom-item__overlay"><span>View Image</span></div>
+        </div>
+
+        <div class="showroom-item showroom-item--wide reveal" data-type="image" data-src="assets/img/van.jpg" data-caption="Werbetechnik · Брендування комерційного транспорту">
+          <img src="assets/img/van.jpg" alt="Commercial Van Wrap" loading="lazy" />
+          <div class="showroom-item__overlay"><span>View Image</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MATERIALS / WHY ===================== -->
+    <section class="why section" id="materials">
+      <div class="why__grid">
+        <div class="why__intro">
+          <p class="eyebrow reveal"><span class="eyebrow__dot"></span><span data-i18n="why.eyebrow">Чому FOLIX-LAB</span></p>
+          <h2 class="section__title reveal" data-i18n="why.title">Преміальність, яку видно в деталях</h2>
+          <p class="section__lead reveal" data-i18n="why.lead">
+            Ми робимо ставку на точне виконання та якісні матеріали.
+            Результат — бездоганний фініш, що служить роками.
+          </p>
+          <a href="#quote" class="btn btn--solid reveal" data-i18n="why.cta">Обговорити проєкт</a>
+        </div>
+
+        <ul class="why__list">
+          <li class="why__item reveal">
+            <span class="why__num">01</span>
+            <div>
+              <h3 data-i18n="why1.title">Досвідчені майстри</h3>
+              <p data-i18n="why1.text">Досвідчена команда, що працює з точністю до міліметра.</p>
+            </div>
+          </li>
+          <li class="why__item reveal">
+            <span class="why__num">02</span>
+            <div>
+              <h3 data-i18n="why2.title">Якісні плівки</h3>
+              <p data-i18n="why2.text">Працюємо лише з якісними професійними плівками відомих виробників.</p>
+            </div>
+          </li>
+          <li class="why__item reveal">
+            <span class="why__num">03</span>
+            <div>
+              <h3 data-i18n="why3.title">Довговічний результат</h3>
+              <p data-i18n="why3.text">Ретельна робота заради чистого та довговічного результату.</p>
+            </div>
+          </li>
+          <li class="why__item reveal">
+            <span class="why__num">04</span>
+            <div>
+              <h3 data-i18n="why4.title">Індивідуальний підхід</h3>
+              <p data-i18n="why4.text">Рішення під ваше авто, стиль і бюджет — від ідеї до результату.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== QUOTE / CTA ===================== -->
+    <section class="quote section" id="quote">
+      <div class="quote__panel reveal">
+        <div class="quote__copy">
+          <p class="eyebrow"><span class="eyebrow__dot"></span><span data-i18n="quote.eyebrow">Безкоштовний прорахунок</span></p>
+          <h2 class="quote__title" data-i18n="quote.title">Розрахуйте вартість вашого проєкту</h2>
+          <p class="quote__lead" data-i18n="quote.lead">
+            Залиште заявку — підготуємо індивідуальну пропозицію та підберемо
+            оптимальне рішення для вашого авто.
+          </p>
+          <ul class="quote__perks">
+            <li data-i18n="quote.perk1">Швидка відповідь</li>
+            <li data-i18n="quote.perk2">Прозорий кошторис</li>
+            <li data-i18n="quote.perk3">Без зобов'язань</li>
+          </ul>
+          <a class="quote__mail" href="mailto:info@folix-lab.de">info@folix-lab.de</a>
+        </div>
+
+        <form class="form" id="quoteForm" novalidate>
+          <div class="field">
+            <label for="f-name" data-i18n="form.name">Ім'я</label>
+            <input id="f-name" name="name" type="text" required autocomplete="name" />
+          </div>
+          <div class="field field--half">
+            <label for="f-phone" data-i18n="form.phone">Телефон</label>
+            <input id="f-phone" name="phone" type="tel" required autocomplete="tel" />
+          </div>
+          <div class="field field--half">
+            <label for="f-email" data-i18n="form.email">E-mail</label>
+            <input id="f-email" name="email" type="email" required autocomplete="email" />
+          </div>
+          <div class="field field--half">
+            <label for="f-vehicle" data-i18n="form.vehicle">Авто (марка / модель)</label>
+            <input id="f-vehicle" name="vehicle" type="text" />
+          </div>
+          <div class="field field--half">
+            <label for="f-service" data-i18n="form.service">Послуга</label>
+            <div class="select">
+              <select id="f-service" name="service">
+                <option value="full" data-i18n="form.opt1">Повна оклейка</option>
+                <option value="ppf" data-i18n="form.opt2">PPF — захист лаку</option>
+                <option value="partial" data-i18n="form.opt3">Часткова оклейка</option>
+                <option value="ads" data-i18n="form.opt4">Зовнішня реклама</option>
+                <option value="design" data-i18n="form.opt5">Дизайн і брендування</option>
+              </select>
+              <svg viewBox="0 0 10 6" width="11" height="7" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.3"/></svg>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-msg" data-i18n="form.message">Повідомлення</label>
+            <textarea id="f-msg" name="message" rows="3"></textarea>
+          </div>
+          <label class="form__consent">
+            <input type="checkbox" id="f-consent" name="consent" required />
+            <span><span data-i18n="form.consent">Я погоджуюсь, що мої дані будуть оброблені для опрацювання запиту.</span> <a href="datenschutz.html" target="_blank" rel="noopener" data-i18n="form.privacylink">Політика конфіденційності</a></span>
+          </label>
+          <button type="submit" class="btn btn--solid form__submit">
+            <span data-i18n="form.submit">Надіслати заявку</span>
+            <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" fill="none" stroke-width="1.4"/></svg>
+          </button>
+          <p class="form__ok" id="formOk" data-i18n="form.ok" hidden>Дякуємо! Ми зв'яжемося з вами найближчим часом.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact section" id="contact">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <p class="eyebrow reveal"><span class="eyebrow__dot"></span><span data-i18n="contact.eyebrow">Контакти</span></p>
+          <h2 class="section__title reveal" data-i18n="contact.title">Завітайте до студії</h2>
+
+          <ul class="contact__list reveal">
+            <li>
+              <span class="contact__k" data-i18n="contact.addrk">Адреса</span>
+              <a class="contact__v" href="https://maps.google.com/?q=Atterseestraße+15,+81241+München" target="_blank" rel="noopener">Atterseestraße 15, 81241 München</a>
+            </li>
+            <li>
+              <span class="contact__k" data-i18n="contact.mailk">E-mail</span>
+              <a class="contact__v" href="mailto:info@folix-lab.de">info@folix-lab.de</a>
+            </li>
+            <li>
+              <span class="contact__k" data-i18n="contact.phonek">Телефон</span>
+              <a class="contact__v" href="tel:+4917684569888">+49 176 84569888</a>
+            </li>
+            <li>
+              <span class="contact__k" data-i18n="contact.hoursk">Години роботи</span>
+              <span class="contact__v" data-i18n="contact.hoursv">Пн–Пт 09:00–18:00 · Сб за домовленістю</span>
+            </li>
+          </ul>
+
+          <div class="contact__social reveal">
+            <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+            <a href="https://wa.me/4917684569888" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+            <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+          </div>
+        </div>
+
+        <a class="contact__map reveal" href="https://maps.google.com/?q=Atterseestraße+15,+81241+München" target="_blank" rel="noopener" aria-label="Map">
+          <div class="contact__map-grid"></div>
+          <div class="contact__pin"><span></span></div>
+          <div class="contact__map-label">
+            <strong>FOLIX-LAB</strong>
+            <span>München · 81241</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================== SHOWROOM LIGHTBOX ===================== -->
+    <div class="showroom-lightbox" id="showroomLightbox" aria-hidden="true">
+      <div class="showroom-lightbox__bg"></div>
+      <div class="showroom-lightbox__toolbar">
+        <div class="showroom-lightbox__counter"><span id="srCurrent">1</span> / <span id="srTotal">10</span></div>
+        <button class="showroom-lightbox__close" id="srClose" aria-label="Close">
+          <svg viewBox="0 0 24 24" width="24" height="24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="square"/></svg>
+        </button>
+      </div>
+      
+      <button class="showroom-lightbox__nav showroom-lightbox__nav--prev" id="srPrev" aria-label="Previous">
+        <svg viewBox="0 0 24 24" width="32" height="32"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="square"/></svg>
+      </button>
+
+      <div class="showroom-lightbox__content" id="srContent">
+        <!-- Media will be injected here dynamically -->
+      </div>
+
+      <button class="showroom-lightbox__nav showroom-lightbox__nav--next" id="srNext" aria-label="Next">
+        <svg viewBox="0 0 24 24" width="32" height="32"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="square"/></svg>
+      </button>
+      
+      <div class="showroom-lightbox__caption" id="srCaption"></div>
+    </div>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="index.html" class="footer__logo">
+        <svg class="logo" viewBox="0 0 34 34" aria-hidden="true"><path d="M5 4 H29 L24 10 H11 V15 H22 L18 21 H11 V30 H5 Z" fill="url(#iri)"/></svg>
+        <span>FOLIX-LAB</span>
+      </a>
+      <p class="footer__tag" data-i18n="footer.tag">Преміальне оклеювання, дизайн та якість. Мюнхен.</p>
+      <a href="#quote" class="btn btn--ghost" data-i18n="footer.cta">Залишити заявку</a>
+    </div>
+
+    <div class="footer__bottom">
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#services" data-i18n="nav.services">Послуги</a>
+        <a href="#process" data-i18n="nav.process">Процес</a>
+        <a href="#works" data-i18n="nav.works">Роботи</a>
+        <a href="#contact" data-i18n="nav.contact">Контакти</a>
+      </nav>
+      <nav class="footer__legal" aria-label="Legal">
+        <a href="impressum.html" data-i18n="footer.imprint">Impressum</a>
+        <a href="datenschutz.html" data-i18n="footer.privacy">Datenschutz</a>
+        <a href="agb.html" data-i18n="footer.terms">AGB</a>
+      </nav>
+      <p class="footer__copy">© <span id="year">2026</span> FOLIX-LAB. <span data-i18n="footer.rights">Усі права захищені.</span></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
