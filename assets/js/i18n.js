@@ -514,14 +514,14 @@
     document.querySelectorAll("[data-set-lang]").forEach((li) =>
       li.classList.toggle("is-active", li.getAttribute("data-set-lang") === lang)
     );
-    try { localStorage.setItem("folix_lang", lang); } catch (e) { }
+    try { sessionStorage.setItem("folix_lang", lang); } catch (e) { }
   }
 
   // Resolve initial language: ?lang= > saved > default de
   let lang = "de";
   try {
     const url = new URLSearchParams(location.search).get("lang");
-    const saved = localStorage.getItem("folix_lang");
+    const saved = sessionStorage.getItem("folix_lang");
     if (url && I18N[url]) lang = url;
     else if (saved && I18N[saved]) lang = saved;
   } catch (e) { }
