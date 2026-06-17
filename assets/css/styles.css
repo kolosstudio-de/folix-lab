@@ -189,6 +189,16 @@ h1,h2,h3{font-family:var(--font-display);font-weight:600;line-height:1.04;letter
 .hero__veil{position:absolute;inset:0;background:
   linear-gradient(180deg,rgba(8,9,11,.35) 0%,rgba(8,9,11,.1) 35%,rgba(8,9,11,.55) 72%,var(--bg) 100%),
   linear-gradient(90deg,rgba(8,9,11,.72) 0%,rgba(8,9,11,.38) 45%,rgba(8,9,11,.05) 75%)}
+.hero--dark { color: #fff; }
+.hero--dark .hero__veil {
+  background: linear-gradient(180deg,rgba(8,9,11,.7) 0%,rgba(8,9,11,.3) 35%,rgba(8,9,11,.85) 85%,var(--bg) 100%),
+              linear-gradient(90deg,rgba(8,9,11,.85) 0%,rgba(8,9,11,.5) 45%,rgba(8,9,11,.1) 75%);
+}
+.hero--dark .hero__sub, .hero--dark .hero__eyebrow, .hero--dark .stat__label { color: rgba(255, 255, 255, 0.7); }
+.hero--dark .btn--ghost { border-color: rgba(255, 255, 255, 0.3); color: #fff; }
+.hero--dark .btn--ghost:hover { background: rgba(255, 255, 255, 0.1); border-color: transparent; }
+.hero--dark .btn--solid { background: #fff; color: #111; }
+.hero--dark .btn--solid:hover { color: #111; }
 .hero__glow{position:absolute;width:60vw;height:60vw;right:-12vw;top:-14vw;background:radial-gradient(circle,rgba(31,209,130,.12),transparent 62%);filter:blur(20px);z-index:-1}
 .hero__inner{max-width:var(--container);margin-inline:auto;width:100%;position:relative}
 .hero__eyebrow{margin-bottom:1.4rem}
