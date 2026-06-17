@@ -228,6 +228,13 @@ h1,h2,h3{font-family:var(--font-display);font-weight:600;line-height:1.04;letter
 .svc__text{color:var(--ink-2);max-width:46ch;font-size:1rem}
 .svc__tags{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.8rem}
 .svc__tags li{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);padding:.45rem .8rem;border:1px solid var(--line);border-radius:100px}
+.svc__cta{display:inline-flex;align-items:center;gap:.55rem;margin-top:2.4rem;padding:.8rem 1.8rem;border-radius:100px;font-family:var(--font-mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:none;background:linear-gradient(135deg,var(--lime,#a3e635),#86efac);color:#0a0f0a;font-weight:700;box-shadow:0 0 0 0 rgba(163,230,53,.4);transition:transform .3s var(--ease),box-shadow .3s var(--ease),filter .3s var(--ease);position:relative;overflow:hidden}
+.svc__cta::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.25),transparent);border-radius:inherit;opacity:0;transition:opacity .3s}
+.svc__cta:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 8px 32px rgba(163,230,53,.45),0 2px 8px rgba(0,0,0,.2);filter:brightness(1.08)}
+.svc__cta:hover::before{opacity:1}
+.svc__cta:active{transform:translateY(0) scale(.98)}
+.svc__cta svg{width:14px;height:14px;transition:transform .3s var(--ease)}
+.svc__cta:hover svg{transform:translateX(4px)}
 
 /* ---------- Process ---------- */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
@@ -1278,4 +1285,47 @@ body.split-page {
   color: var(--ink);
   z-index: 10;
   font-family: var(--font-display);
+}
+
+/* ============================================================
+   Extended Responsive — svc CTA, showroom, nav
+   ============================================================ */
+
+/* Large laptop / small desktop */
+@media (max-width: 1280px) {
+  .svc__cta { font-size: .74rem; padding: .75rem 1.5rem; }
+  .showroom-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .svc__cta { font-size: .72rem; padding: .7rem 1.4rem; margin-top: 2rem; }
+  .showroom-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .showroom-item--wide { grid-column: span 2; }
+}
+
+/* Small tablet / large phone */
+@media (max-width: 768px) {
+  .svc__cta { width: 100%; justify-content: center; padding: .9rem 1.2rem; font-size: .8rem; margin-top: 1.8rem; border-radius: 14px; }
+  .showroom-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .showroom-item--wide { grid-column: span 2; }
+  .showroom-item { border-radius: 10px; }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  .svc__cta { font-size: .78rem; padding: .85rem 1rem; gap: .4rem; }
+  .showroom-grid { grid-template-columns: 1fr; gap: 8px; }
+  .showroom-item--wide { grid-column: span 1; }
+  .svc__body { padding: clamp(20px, 5vw, 32px); }
+  .svc__title { font-size: clamp(1.3rem, 5vw, 1.9rem); }
+  .svc__text { font-size: .9rem; }
+  .svc__tags { gap: .4rem; }
+  .svc__tags li { font-size: .65rem; padding: .35rem .65rem; }
+}
+
+/* Very small phones (iPhone SE, Galaxy A series) */
+@media (max-width: 380px) {
+  .svc__cta { font-size: .72rem; border-radius: 12px; }
+  .svc__body { padding: 18px 16px; }
 }
