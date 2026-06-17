@@ -4,3 +4,10 @@ ANALYSE.md
 .DS_Store
 Folix-lab/
 scripts/
+media/
+*.DNG
+*.HEIC
+folix-lab-site.zip
+Angebote/
+._*
+scratch_thumbs/
