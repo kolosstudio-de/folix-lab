@@ -1,1 +1,10 @@
 .vercel
+media/Car/
+media/Werburg/
+media/Werbung/
+*.DNG
+*.HEIC
+folix-lab-site.zip
+Folix-lab/
+._*
+scratch_thumbs/
