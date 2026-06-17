@@ -875,14 +875,15 @@ body.split-page {
 
 /* Active states */
 .site-switch__btn.is-active {
-  color: #ffffff;
+  color: var(--bg);
+  font-weight: 700;
 }
 
 /* Wrapping Active Theme Styles (Green Lime) */
 .site-switch__btn--wrap.is-active {
-  background: rgba(163, 230, 53, 0.12);
-  border: 1px solid rgba(163, 230, 53, 0.25);
-  box-shadow: 0 0 10px rgba(163, 230, 53, 0.1);
+  background: var(--ink);
+  border: 1px solid var(--ink);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 .site-switch__btn--wrap.is-active .site-switch__dot {
   background-color: #a3e635;
@@ -891,9 +892,9 @@ body.split-page {
 
 /* Werbetechnik Active Theme Styles (Purple Magenta) */
 .site-switch__btn--werbe.is-active {
-  background: rgba(236, 72, 153, 0.12);
-  border: 1px solid rgba(236, 72, 153, 0.25);
-  box-shadow: 0 0 10px rgba(236, 72, 153, 0.1);
+  background: var(--ink);
+  border: 1px solid var(--ink);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 .site-switch__btn--werbe.is-active .site-switch__dot {
   background-color: #ec4899;
