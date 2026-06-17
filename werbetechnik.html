@@ -353,52 +353,52 @@
       </div>
 
       <div class="gallery__grid showroom-grid">
-        <figure class="gallery__item showroom-item reveal">
+        <figure class="gallery__item showroom-item reveal" data-type="image" data-src="assets/img/gallery/werbung/gallery_1.webp" data-caption="Werbetechnik">
           <img src="assets/img/gallery/werbung/gallery_1.webp" alt="Werbetechnik" loading="lazy" />
         </figure>
-        <figure class="gallery__item showroom-item reveal">
+        <figure class="gallery__item showroom-item reveal" data-type="image" data-src="assets/img/gallery/werbung/gallery_2.webp" data-caption="Werbetechnik">
           <img src="assets/img/gallery/werbung/gallery_2.webp" alt="Werbetechnik" loading="lazy" />
         </figure>
-        <figure class="gallery__item showroom-item reveal">
+        <figure class="gallery__item showroom-item reveal" data-type="image" data-src="assets/img/gallery/werbung/gallery_3.webp" data-caption="Werbetechnik">
           <img src="assets/img/gallery/werbung/gallery_3.webp" alt="Werbetechnik" loading="lazy" />
         </figure>
-        <figure class="gallery__item showroom-item reveal">
+        <figure class="gallery__item showroom-item reveal" data-type="image" data-src="assets/img/gallery/werbung/gallery_5.webp" data-caption="Werbetechnik">
           <img src="assets/img/gallery/werbung/gallery_5.webp" alt="Werbetechnik" loading="lazy" />
         </figure>
-        <figure class="gallery__item showroom-item reveal">
+        <figure class="gallery__item showroom-item reveal" data-type="image" data-src="assets/img/gallery/werbung/gallery_6.webp" data-caption="Werbetechnik">
           <img src="assets/img/gallery/werbung/gallery_6.webp" alt="Werbetechnik" loading="lazy" />
         </figure>
-        <figure class="gallery__item showroom-item reveal">
+        <figure class="gallery__item showroom-item reveal" data-type="image" data-src="assets/img/gallery/werbung/gallery_7.webp" data-caption="Werbetechnik">
           <img src="assets/img/gallery/werbung/gallery_7.webp" alt="Werbetechnik" loading="lazy" />
         </figure>
-        <figure class="gallery__item showroom-item reveal">
+        <figure class="gallery__item showroom-item reveal" data-type="image" data-src="assets/img/gallery/werbung/gallery_8.webp" data-caption="Werbetechnik">
           <img src="assets/img/gallery/werbung/gallery_8.webp" alt="Werbetechnik" loading="lazy" />
         </figure>
-        <figure class="gallery__item showroom-item reveal">
+        <figure class="gallery__item showroom-item reveal" data-type="image" data-src="assets/img/gallery/werbung/gallery_9.webp" data-caption="Werbetechnik">
           <img src="assets/img/gallery/werbung/gallery_9.webp" alt="Werbetechnik" loading="lazy" />
         </figure>
-        <figure class="gallery__item showroom-item reveal">
+        <figure class="gallery__item showroom-item reveal" data-type="image" data-src="assets/img/gallery/werbung/gallery_10.webp" data-caption="Werbetechnik">
           <img src="assets/img/gallery/werbung/gallery_10.webp" alt="Werbetechnik" loading="lazy" />
         </figure>
-        <figure class="gallery__item showroom-item reveal">
+        <figure class="gallery__item showroom-item reveal" data-type="image" data-src="assets/img/gallery/werbung/gallery_11.webp" data-caption="Werbetechnik">
           <img src="assets/img/gallery/werbung/gallery_11.webp" alt="Werbetechnik" loading="lazy" />
         </figure>
-        <figure class="gallery__item showroom-item reveal">
+        <figure class="gallery__item showroom-item reveal" data-type="image" data-src="assets/img/gallery/werbung/gallery_12.webp" data-caption="Werbetechnik">
           <img src="assets/img/gallery/werbung/gallery_12.webp" alt="Werbetechnik" loading="lazy" />
         </figure>
-        <figure class="gallery__item showroom-item reveal">
+        <figure class="gallery__item showroom-item reveal" data-type="image" data-src="assets/img/gallery/werbung/gallery_13.webp" data-caption="Werbetechnik">
           <img src="assets/img/gallery/werbung/gallery_13.webp" alt="Werbetechnik" loading="lazy" />
         </figure>
-        <figure class="gallery__item showroom-item reveal">
+        <figure class="gallery__item showroom-item reveal" data-type="image" data-src="assets/img/gallery/werbung/gallery_14.webp" data-caption="Werbetechnik">
           <img src="assets/img/gallery/werbung/gallery_14.webp" alt="Werbetechnik" loading="lazy" />
         </figure>
-        <figure class="gallery__item showroom-item reveal">
+        <figure class="gallery__item showroom-item reveal" data-type="image" data-src="assets/img/gallery/werbung/gallery_15.webp" data-caption="Werbetechnik">
           <img src="assets/img/gallery/werbung/gallery_15.webp" alt="Werbetechnik" loading="lazy" />
         </figure>
-        <figure class="gallery__item showroom-item reveal">
+        <figure class="gallery__item showroom-item reveal" data-type="image" data-src="assets/img/gallery/werbung/gallery_16.webp" data-caption="Werbetechnik">
           <img src="assets/img/gallery/werbung/gallery_16.webp" alt="Werbetechnik" loading="lazy" />
         </figure>
-        <figure class="gallery__item showroom-item reveal">
+        <figure class="gallery__item showroom-item reveal" data-type="image" data-src="assets/img/gallery/werbung/gallery_17.webp" data-caption="Werbetechnik">
           <img src="assets/img/gallery/werbung/gallery_17.webp" alt="Werbetechnik" loading="lazy" />
         </figure>
       </div>
@@ -556,6 +556,32 @@
         </a>
       </div>
     </section>
+  
+    <!-- ===================== SHOWROOM LIGHTBOX ===================== -->
+    <div class="showroom-lightbox" id="showroomLightbox" aria-hidden="true">
+      <div class="showroom-lightbox__bg"></div>
+      <div class="showroom-lightbox__toolbar">
+        <div class="showroom-lightbox__counter"><span id="srCurrent">1</span> / <span id="srTotal">10</span></div>
+        <button class="showroom-lightbox__close" id="srClose" aria-label="Close">
+          <svg viewBox="0 0 24 24" width="24" height="24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="square"/></svg>
+        </button>
+      </div>
+      
+      <button class="showroom-lightbox__nav showroom-lightbox__nav--prev" id="srPrev" aria-label="Previous">
+        <svg viewBox="0 0 24 24" width="32" height="32"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="square"/></svg>
+      </button>
+
+      <div class="showroom-lightbox__content" id="srContent">
+        <!-- Media will be injected here dynamically -->
+      </div>
+
+      <button class="showroom-lightbox__nav showroom-lightbox__nav--next" id="srNext" aria-label="Next">
+        <svg viewBox="0 0 24 24" width="32" height="32"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="square"/></svg>
+      </button>
+      
+      <div class="showroom-lightbox__caption" id="srCaption"></div>
+    </div>
+
   </main>
 
   <!-- ===================== FOOTER ===================== -->
