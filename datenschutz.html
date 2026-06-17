@@ -9,6 +9,19 @@
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/css/fonts.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <script>
+    (function() {
+      try {
+        var theme = localStorage.getItem('FOLIX_THEME');
+        if (!theme) {
+          var hour = new Date().getHours();
+          theme = (hour >= 18 || hour < 6) ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -38,10 +51,10 @@
 
     <h2>3. Hosting &amp; Server-Logfiles</h2>
     <p>
-      Diese Website wird bei <strong>Hostinger</strong> gehostet (Hostinger International Ltd., 61 Lordou Vironos Street, 6023 Larnaca, Cyprus) bzw. über <strong>GitHub Pages</strong> bereitgestellt. Beim Aufruf der Seite werden technisch notwendige Daten (z. B. IP-Adresse, Datum/Uhrzeit
+      Diese Website wird bei <strong>Vercel</strong> gehostet (Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA). Beim Aufruf der Seite werden technisch notwendige Daten (z. B. IP-Adresse, Datum/Uhrzeit
       des Zugriffs, abgerufene Datei, Browsertyp) in Server-Logfiles verarbeitet. Rechtsgrundlage ist
       unser berechtigtes Interesse an einem sicheren und stabilen Betrieb gemäß Art. 6 Abs. 1 lit. f
-      DSGVO. Mit dem Hosting-Anbieter besteht ein Auftragsverarbeitungsvertrag (Art. 28 DSGVO).
+      DSGVO. Mit dem Hosting-Anbieter besteht ein Auftragsverarbeitungsvertrag (Art. 28 DSGVO). Die Datenübermittlung in die USA wird durch Standardvertragsklauseln der EU-Kommission abgesichert.
     </p>
 
     <h2>4. Lokal gehostete Schriftarten</h2>
@@ -53,7 +66,7 @@
 
     <h2>5. Cookies & lokaler Speicher (localStorage)</h2>
     <p>
-      Wir setzen auf dieser Website essenzielle lokale Speichertechnologien (localStorage) ein, um Ihre Spracheinstellungen und Ihre Entscheidung im Cookie-Banner (Zustimmung oder Ablehnung von Statistik-Cookies) zu speichern. Dies ist technisch notwendig (Art. 6 Abs. 1 lit. f DSGVO).
+      Wir setzen auf dieser Website essenzielle lokale Speichertechnologien (localStorage) ein, um Ihre Spracheinstellungen (FOLIX_LANG), das gewählte Theme (Hell/Dunkel, FOLIX_THEME) und Ihre Entscheidung im Cookie-Banner (Zustimmung oder Ablehnung von Statistik-Cookies) zu speichern. Dies ist technisch notwendig für die Funktion der Website (Art. 6 Abs. 1 lit. f DSGVO).
     </p>
 
     <!-- [GOOGLE ANALYTICS - EINBLENDEN SOBALD AKTIVIERT]

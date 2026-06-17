@@ -9,6 +9,19 @@
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/css/fonts.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <script>
+    (function() {
+      try {
+        var theme = localStorage.getItem('FOLIX_THEME');
+        if (!theme) {
+          var hour = new Date().getHours();
+          theme = (hour >= 18 || hour < 6) ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>

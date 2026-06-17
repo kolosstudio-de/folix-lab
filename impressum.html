@@ -9,6 +9,19 @@
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/css/fonts.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <script>
+    (function() {
+      try {
+        var theme = localStorage.getItem('FOLIX_THEME');
+        if (!theme) {
+          var hour = new Date().getHours();
+          theme = (hour >= 18 || hour < 6) ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -26,6 +39,12 @@
       Atterseestraße 15<br />
       81241 München<br />
       Deutschland
+    </p>
+
+    <h2>Umsatzsteuer-ID</h2>
+    <p>
+      Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
+      DE XXX XXX XXX <!-- TODO: Umsatzsteuer-ID hier eintragen, falls vorhanden -->
     </p>
 
     <h2>Kontakt</h2>

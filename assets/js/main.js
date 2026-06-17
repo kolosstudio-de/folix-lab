@@ -25,6 +25,22 @@
   const onScroll = () => nav && nav.classList.toggle("is-scrolled", window.scrollY > 12);
   onScroll(); addEventListener("scroll", onScroll, { passive: true });
 
+  /* ---------- Dark Hero Nav Check ---------- */
+  if ($(".hero--dark")) {
+    nav && nav.classList.add("nav--dark-hero");
+  }
+
+  /* ---------- Theme Toggle ---------- */
+  const themeToggle = $("#themeToggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      const newTheme = isDark ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", newTheme);
+      localStorage.setItem("FOLIX_THEME", newTheme);
+    });
+  }
+
   /* ---------- Mobile burger ---------- */
   const burger = $("#burger"), links = $(".nav__links");
   if (burger && links) {
