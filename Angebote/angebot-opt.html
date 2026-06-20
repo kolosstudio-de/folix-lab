@@ -20,7 +20,6 @@
   h1,h2,h3{font-family:var(--df);font-weight:600;line-height:1.1;letter-spacing:-.01em}
   .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
   .ey{font-family:var(--mf);font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;color:var(--ink3)}
-  .ph{color:#ffc266;background:rgba(255,184,77,.1);padding:.05em .4em;border-radius:4px}
   a{color:var(--accent)}
   .head{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:40px;flex-wrap:wrap}
   .brand{display:flex;align-items:center;gap:.55rem;font-family:var(--df);font-weight:600;font-size:1.4rem}
@@ -47,33 +46,25 @@
   td.price{text-align:right;font-family:var(--df);white-space:nowrap;color:var(--ink)}
   td .sub{display:block;font-size:.8rem;color:var(--ink3);margin-top:3px;line-height:1.5}
   .strike{color:var(--ink3);text-decoration:line-through;font-size:.85em;margin-right:6px}
-  .incl{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:8px 0 4px}
-  .incl .c{border:1px solid var(--line);border-radius:12px;padding:14px 15px;background:var(--bg1);position:relative}
-  .incl .c h4{font-family:var(--df);font-size:.95rem;margin-bottom:8px}
-  .incl .c .amt{font-family:var(--mf);font-size:.72rem;color:var(--accent);display:block;margin-bottom:8px}
-  .incl .c ul{gap:5px;margin:0}
-  .incl .c ul li{padding-left:16px;font-size:.8rem}
-  .incl .c ul li::before{width:8px;height:8px;top:.45em}
-  .incl .c.reco{border-color:rgba(33,227,154,.4);background:linear-gradient(135deg,rgba(8,207,142,.06),rgba(196,242,74,.03))}
-  .incl .c .badge{position:absolute;top:-10px;right:14px;background:var(--grad);color:#06120c;font-family:var(--mf);font-size:.58rem;font-weight:700;letter-spacing:.1em;padding:3px 10px;border-radius:6px;text-transform:uppercase}
-  .dir-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+  .dir-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:16px 0}
   .dir-card{border:1px solid var(--line);border-radius:14px;padding:18px;background:var(--bg1);position:relative}
   .dir-card.combo{border-color:rgba(33,227,154,.35);background:linear-gradient(135deg,rgba(8,207,142,.07),rgba(196,242,74,.03))}
   .dir-card .dir-label{font-family:var(--mf);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
   .dir-card .dir-name{font-family:var(--df);font-size:1rem;font-weight:600;margin-bottom:2px}
   .dir-card .dir-price{font-family:var(--df);font-size:1.6rem;color:var(--accent);margin:8px 0 4px}
   .dir-card .dir-price .old{font-size:.9rem;color:var(--ink3);text-decoration:line-through;margin-right:6px}
+  .dir-card .dir-price .per{font-size:.7rem;color:var(--ink3);font-family:var(--mf)}
   .dir-card .dir-save{font-family:var(--mf);font-size:.62rem;color:var(--lime);letter-spacing:.05em;background:rgba(196,242,74,.1);padding:3px 8px;border-radius:4px;display:inline-block;margin-bottom:8px}
   .dir-card .dir-note{font-size:.8rem;color:var(--ink2);line-height:1.5}
   .dir-card .dir-badge{position:absolute;top:-10px;right:14px;background:var(--grad);color:#06120c;font-family:var(--mf);font-size:.58rem;font-weight:700;letter-spacing:.1em;padding:3px 10px;border-radius:6px;text-transform:uppercase}
+  .dir-card .dir-contract{font-family:var(--mf);font-size:.62rem;color:var(--ink3);margin-top:8px;padding-top:8px;border-top:1px solid var(--line)}
   .box{border:1px solid var(--line);border-radius:16px;padding:24px;background:var(--bg1);margin:16px 0}
   .box.green{background:linear-gradient(135deg,rgba(8,207,142,.08),rgba(196,242,74,.04));border-color:rgba(33,227,154,.25)}
   .box.amber{border-color:rgba(255,184,77,.28);background:rgba(255,184,77,.05)}
-  .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
   .pill{display:inline-block;font-family:var(--mf);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border:1px solid var(--line2);border-radius:100px;color:var(--ink2);margin:2px}
-  .cta{margin-top:14px;padding:14px 20px;border-radius:12px;background:var(--grad);color:#06120c;font-weight:700;display:inline-block;font-family:var(--df)}
+  .cta{margin-top:14px;padding:14px 20px;border-radius:12px;background:var(--grad);color:#06120c;font-weight:700;display:inline-block;font-family:var(--df);text-decoration:none}
   .foot{margin-top:50px;padding-top:24px;border-top:1px solid var(--line);font-size:.8rem;color:var(--ink3);line-height:1.8}
-  @media (max-width:680px){.parties,.two,.incl,.dir-grid{grid-template-columns:1fr}.wrap{padding:32px 22px 60px}}
+  @media(max-width:680px){.parties{grid-template-columns:1fr}.dir-grid{grid-template-columns:1fr}.wrap{padding:32px 22px 60px}}
 </style>
 </head>
 <body>
@@ -89,9 +80,9 @@
         <a href="angebot-opt-de" class="pill" style="text-decoration:none;margin:2px">DE</a>
         <span class="pill" style="border-color:var(--accent);color:var(--accent);font-weight:600;margin:2px">UA</span>
       </div>
-      <b>ПРОПОЗИЦІЯ (Оптимізована)</b> № FL-2026-003<br />
-      Дата: 08.06.2026<br />
-      Дійсна до: <b>22.06.2026</b>
+      <b>ПРОПОЗИЦІЯ</b> № FL-2026-003<br />
+      Дата: 20.06.2026<br />
+      Дійсна до: <b>04.07.2026</b>
     </div>
   </div>
 
@@ -117,129 +108,176 @@
 
   <span class="ey">Сайт · Відео · Локальний маркетинг</span>
   <h1 class="title">Ваша цифрова <span class="grad">видимість</span> у Мюнхені.</h1>
-  <p class="lead">На основі нашої розмови я адаптував цю пропозицію точно під ваші пріоритети – з фокусом на максимальне локальне охоплення та високу якість, без компромісів у презентації ваших послуг.</p>
+  <p class="lead">На основі нашої розмови я підготував пропозицію під ваші пріоритети та бюджет. Усі ціни ідентичні попередній пропозиції — тут вони лише оптимально зібрані в пакети.</p>
 
+  <!-- 01 — ВЖЕ РЕАЛІЗОВАНО -->
   <section>
     <h2><span class="n">01</span>Вже успішно реалізовано</h2>
-    <p class="lead">Базу створено. Ваша преміум-візитка вже в онлайні і готова приймати клієнтів.</p>
     <div class="box green">
-      <p style="margin-bottom:10px"><b>Сайт онлайн:</b> &nbsp;<a href="https://folix-lab.de">https://folix-lab.de</a></p>
+      <p style="margin-bottom:10px"><b>Онлайн:</b> &nbsp;<a href="https://folix-lab.de">https://folix-lab.de</a></p>
       <div style="margin-bottom:12px">
         <span class="pill">2 напрямки: Wrapping + Werbetechnik</span>
-        <span class="pill">4 мови UA · DE · RU · EN</span>
+        <span class="pill">4 мови</span>
         <span class="pill">Мобільна адаптація</span>
-        <span class="pill">Impressum + DSGVO</span>
+        <span class="pill">DSGVO</span>
       </div>
-      <p style="font-size:.9rem; border-top:1px solid rgba(255,255,255,.1); padding-top:12px;"><b>Інвестиція в сайт:</b> <span style="text-decoration:line-through; color:var(--ink3);">1.150 €</span> <b>500 €</b> <span style="color:var(--accent)">(Вже узгоджено / оплачено)</span></p>
+      <p style="font-size:.9rem;border-top:1px solid rgba(255,255,255,.1);padding-top:12px"><b>Сайт:</b> <span class="strike">1.150 €</span> <b>500 €</b> <span style="color:var(--accent)">✓ Завершено</span></p>
     </div>
   </section>
 
+  <!-- 02 — РАЗОВЕ НАЛАШТУВАННЯ -->
   <section>
-    <h2><span class="n">02</span>Разове налаштування</h2>
-    <p class="lead">Щоб ваш новий сайт знаходили клієнти, присутність на Google Maps та Instagram у Мюнхені є вирішальною.</p>
+    <h2><span class="n">02</span>Разове налаштування — запуск видимості</h2>
+    <p class="lead">Сайт є. Тепер потрібна видимість на Google Maps та Instagram, щоб клієнти вас знаходили.</p>
 
     <div class="dir-grid">
+      <div class="dir-card">
+        <div class="dir-label">Лише видимість</div>
+        <div class="dir-name">Starter</div>
+        <div class="dir-price">690 €</div>
+        <ul style="margin-top:10px;margin-bottom:10px">
+          <li><b>Google Maps</b> для обох напрямків (Wrapping + Werbetechnik)</li>
+          <li>Keyword-дослідження, стратегія відгуків</li>
+        </ul>
+        <div class="dir-note">Мінімальний старт: обидва напрямки одразу на Google Maps.</div>
+      </div>
+
       <div class="dir-card combo">
         <div class="dir-badge">Рекомендація</div>
-        <div class="dir-label">Підходить під бюджет</div>
-        <div class="dir-name">Local Starter Пакет</div>
+        <div class="dir-label">Видимість + Брендинг</div>
+        <div class="dir-name">Starter+</div>
         <div class="dir-price">1.180 €</div>
-        <ul style="margin-top:12px; margin-bottom:12px">
-          <li><b>Google Maps для ОБОХ напрямків</b> (Wrapping & Werbetechnik): Налаштування, SEO-оптимізація, ключові слова, стратегія відгуків (Звичайна ціна: 690 €)</li>
-          <li><b>Instagram Branding для 1 профілю</b> (напр. Wrapping): Дизайн, хайлайтс, оптимізація біо, 3 стартових пости (Звичайна ціна: 490 €)</li>
+        <ul style="margin-top:10px;margin-bottom:10px">
+          <li><b>Google Maps</b> для обох напрямків (690 €)</li>
+          <li><b>Instagram Branding</b> для 1 профілю: шаблони, хайлайтс, біо, 3 стартових пости (490 €)</li>
         </ul>
-        <div class="dir-note">Ідеально для старту: ми виводимо обидва напрямки бізнесу на перші позиції в Google Maps і створюємо професійний вигляд в Instagram. <br><br><i>(Без відеозйомки)</i></div>
+        <div class="dir-note">Ідеально під ваш бюджет. Google Maps + професійний Instagram.</div>
       </div>
-      
+
       <div class="dir-card">
-        <div class="dir-label">Максимальна видимість</div>
-        <div class="dir-name">Content & Local Kombi</div>
+        <div class="dir-label">Максимальний ефект</div>
+        <div class="dir-name">Full Launch</div>
         <div class="dir-price"><span class="old">1.870 €</span>1.790 €</div>
         <div class="dir-save">Економія 80 €</div>
-        <ul style="margin-top:12px; margin-bottom:12px">
-          <li><b>Google Maps для ОБОХ напрямків</b> (Звичайна ціна: 690 €)</li>
-          <li><b>Instagram Branding для ОБОХ профілів</b> (Звичайна ціна: 590 €)</li>
-          <li><b>Promo-відео Компакт:</b> 1 знімальний день, професійний монтаж для сайту та соцмереж (Звичайна ціна: 590 €)</li>
+        <ul style="margin-top:10px;margin-bottom:10px">
+          <li><b>Google Maps</b> для обох напрямків (690 €)</li>
+          <li><b>Instagram Branding</b> для обох профілів (590 €)</li>
+          <li><b>Promo-відео Компакт:</b> 1 знімальний день + монтаж (590 €)</li>
         </ul>
-        <div class="dir-note">Пакет «все включено». Містить преміум-відеозйомку на місці для максимальної довіри клієнтів.</div>
+        <div class="dir-note">Повний пакет: Maps + Instagram + Відео.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 — ЩОМІСЯЧНИЙ СУПРОВІД -->
+  <section>
+    <h2><span class="n">03</span>Щомісячний супровід — контракт на 6 місяців</h2>
+    <p class="lead">Локальне SEO — це не спринт, а марафон. З мінімальним терміном <b>6 місяців</b> ви отримуєте вигідну ціну — і достатньо часу, щоб побачити реальні результати.</p>
+
+    <div class="dir-grid">
+      <div class="dir-card">
+        <div class="dir-label">1 напрямок</div>
+        <div class="dir-name">Sichtbar</div>
+        <div class="dir-price">390 € <span class="per">/ міс</span></div>
+        <div class="dir-save">Вигода за контракт</div>
+        <ul style="margin-top:10px;margin-bottom:10px">
+          <li><b>Local SEO</b> для 1 Google-профілю</li>
+          <li>4 SEO-пости / місяць</li>
+          <li>Управління відгуками</li>
+          <li>Підтримка сайту (до 1 год)</li>
+          <li>Щомісячний звіт</li>
+        </ul>
+        <div class="dir-contract">6 × 390 € = <b>2.340 €</b> за весь термін<br>Без контракту: 450 €/міс</div>
+      </div>
+
+      <div class="dir-card combo">
+        <div class="dir-badge">Рекомендація</div>
+        <div class="dir-label">2 напрямки + Instagram</div>
+        <div class="dir-name">Dominant</div>
+        <div class="dir-price">690 € <span class="per">/ міс</span></div>
+        <div class="dir-save">Найкращий ROI</div>
+        <ul style="margin-top:10px;margin-bottom:10px">
+          <li><b>Local SEO</b> для обох Google-профілів</li>
+          <li>8 SEO-постів / місяць (4 на кожний)</li>
+          <li>Управління відгуками</li>
+          <li><b>Instagram-контент:</b> 4 пости / місяць</li>
+          <li>Підтримка сайту (до 2 год)</li>
+          <li>15-хв стратегічний дзвінок / місяць</li>
+          <li>Щомісячний звіт</li>
+        </ul>
+        <div class="dir-contract">6 × 690 € = <b>4.140 €</b> за весь термін<br>Без контракту: 790 €/міс</div>
+      </div>
+
+      <div class="dir-card">
+        <div class="dir-label">Full Digital</div>
+        <div class="dir-name">Total</div>
+        <div class="dir-price">990 € <span class="per">/ міс</span></div>
+        <div class="dir-save">Максимальна видимість</div>
+        <ul style="margin-top:10px;margin-bottom:10px">
+          <li><b>Local SEO</b> для обох Google-профілів</li>
+          <li>8 SEO-постів / місяць</li>
+          <li>Управління відгуками</li>
+          <li><b>Instagram-ведення:</b> 6 постів + Stories</li>
+          <li><b>2 Reels / місяць</b> (із вашого матеріалу)</li>
+          <li>Підтримка сайту (до 3 год)</li>
+          <li>30-хв стратегічна сесія / місяць</li>
+          <li>Розширений звіт + конкуренти</li>
+        </ul>
+        <div class="dir-contract">6 × 990 € = <b>5.940 €</b> за весь термін<br>Без контракту: 1.150 €/міс</div>
       </div>
     </div>
 
-    <h3 style="font-family:var(--df);font-size:1.1rem;margin:36px 0 6px;color:var(--ink)">Відео-продакшн (Окремо)</h3>
+    <div class="box" style="padding:16px 20px;margin-top:16px">
+      <p style="font-size:.85rem;color:var(--ink2)"><b style="color:var(--accent)">Щодо контракту:</b> Мінімальний термін 6 місяців, далі — щомісячне розірвання за 30 днів. Без контракту діють звичайні ціни (вказані в кожній картці).</p>
+    </div>
+  </section>
+
+  <!-- 04 — ВІДЕО -->
+  <section>
+    <h2><span class="n">04</span>Відео-продакшн — окремо</h2>
     <table>
       <tr><th>Послуга</th><th></th><th style="text-align:right">Нетто</th></tr>
       <tr>
-        <td><b>Відео-пакет "Компакт"</b> — 1 знімальний день у Мюнхені, професійний монтаж для сайту (горизонтальне) та соцмереж (1 Reel)<span class="sub">Якісна зйомка з професійним обладнанням, ліцензійна музика.</span></td>
+        <td><b>Promo-відео «Компакт»</b> — 1 знімальний день, монтаж для сайту + 1 Reel<span class="sub">Професійне обладнання, ліцензійна музика.</span></td>
         <td></td><td class="price">590 €</td>
       </tr>
       <tr>
-        <td><b>Відео-пакет "Повний"</b> — 3 знімальні дні (До / Під час / Після), монтаж для YouTube + 2-3 Reels<span class="sub">Ідеально, щоб високопрофесійно задокументувати весь процес оклейки автомобіля.</span></td>
+        <td><b>Відео-пакет «Full»</b> — 3 знімальні дні, YouTube + 2–3 Reels<span class="sub">Повний процес оклейки задокументовано.</span></td>
         <td></td><td class="price">1.290 €</td>
+      </tr>
+      <tr>
+        <td><b>Reels-абонемент</b> — 2 Reels/місяць<span class="sub">Зйомка + монтаж. Instagram & TikTok.</span></td>
+        <td></td><td class="price">390 €/міс</td>
       </tr>
     </table>
   </section>
 
+  <!-- 05 — СТОРОННІ ВИТРАТИ -->
   <section>
-    <h2><span class="n">03</span>Щомісячний супровід</h2>
-    <p class="lead">Локальне SEO — це не спринт, а марафон. Ми стабільно просуватимемо ваші профілі на Google Maps до топ-3.</p>
-
-    <div class="dir-grid">
-      <div class="dir-card">
-        <div class="dir-label">1 напрямок / місяць</div>
-        <div class="dir-name">Local SEO Basis</div>
-        <div class="dir-price">350 €</div>
-        <ul style="margin-top:12px; margin-bottom:12px">
-          <li><b>Активне SEO лише для головного профілю</b> (напр. Wrapping)</li>
-          <li>4 SEO-пости на місяць</li>
-          <li>Управління відгуками</li>
-          <li>Технічна підтримка сайту (дрібні правки) включена</li>
-        </ul>
-        <div class="dir-note">Фокусується повністю на найбільш прибутковій гілці (оклейка), точно в рамках вашого бюджету.</div>
-      </div>
-
-      <div class="dir-card combo">
-        <div class="dir-badge">Рекомендація</div>
-        <div class="dir-label">2 напрямки / місяць</div>
-        <div class="dir-name">Local SEO Kombi</div>
-        <div class="dir-price"><span class="old">700 €</span>490 €</div>
-        <div class="dir-save">Найкращий Value</div>
-        <ul style="margin-top:12px; margin-bottom:12px">
-          <li><b>Активне SEO для ОБОХ профілів</b> (Wrapping + Werbetechnik)</li>
-          <li>4 SEO-пости для кожного профілю / місяць</li>
-          <li>Обробка та управління відгуками</li>
-          <li>Технічна підтримка сайту (дрібні правки) включена</li>
-        </ul>
-        <div class="dir-note">Всього за додаткові 140€ ви повністю покриваєте напрямок Werbetechnik і подвоюєте свою видимість у Мюнхені.</div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2><span class="n">04</span>Сторонні витрати (платите напряму)</h2>
+    <h2><span class="n">05</span>Сторонні витрати (платите напряму)</h2>
     <table>
       <tr><td>Домен <b>folix-lab.de</b><span class="sub">Вже є</span></td><td></td><td class="price">~6–12 €/рік</td></tr>
-      <tr><td>Проф-пошта @folix-lab.de — <b>Google Workspace</b><span class="sub">Опціонально. Міграція наявної пошти на Workspace (Gmail)</span></td><td></td><td class="price">~6–14 €/міс</td></tr>
-      <tr><td>Хостинг<span class="sub">Vercel / Cloudflare Pages</span></td><td></td><td class="price">0 €</td></tr>
+      <tr><td>Проф-пошта — <b>Google Workspace</b><span class="sub">Опціонально</span></td><td></td><td class="price">~6–14 €/міс</td></tr>
+      <tr><td>Хостинг<span class="sub">Vercel / Cloudflare</span></td><td></td><td class="price">0 €</td></tr>
       <tr><td>Google-профіль (Maps)</td><td></td><td class="price">безкоштовно</td></tr>
     </table>
-    <p style="font-size:.84rem;color:var(--ink2)">Ці витрати йдуть напряму провайдерам — це <b>не</b> мій гонорар.</p>
   </section>
 
+  <!-- 06 — ЩО ПОТРІБНО -->
   <section>
-    <h2><span class="n">05</span>Що мені потрібно від вас (для старту)</h2>
+    <h2><span class="n">06</span>Що потрібно від вас</h2>
     <ul>
-      <li><b>Gewerbeanmeldung</b> + ваша <b>форма оподаткування</b> (Kleinunternehmer чи Regelbesteuerung) — для коректного Impressum</li>
-      <li><b>Номер телефону</b> та посилання на соцмережі</li>
-      <li><b>Перші фото / відео</b> ваших робіт для заповнення профілів (якщо не замовлено відео-пакет)</li>
+      <li><b>Gewerbeanmeldung</b> + <b>форма оподаткування</b> (Kleinunternehmer / Regelbesteuerung)</li>
+      <li>Номер телефону та посилання на соцмережі</li>
+      <li>Перші фото/відео ваших проектів</li>
     </ul>
-    <p style="font-size:.84rem;color:var(--ink3)">Юридична відповідальність за зміст Impressum лежить на замовнику.</p>
   </section>
 
-  <a class="cta" href="https://folix-lab.de">Переглянути демо сайту →</a>
+  <a class="cta" href="https://folix-lab.de">Переглянути сайт →</a>
 
   <div class="foot">
-    <p>Усі ціни в <b>EUR, нетто</b>. Як Kleinunternehmer згідно § 19 UStG ПДВ не нараховується.</p>
-    <p>Термін дії пропозиції — до <b>22.06.2026</b>. Сторонні витрати (домен, пошта) оплачуються напряму провайдерам.</p>
+    <p>Усі ціни в <b>EUR, нетто</b>. Згідно § 19 UStG ПДВ не нараховується.</p>
+    <p>Дійсна до <b>04.07.2026</b>. Сторонні витрати оплачуються напряму провайдерам.</p>
     <p>© 2026 · Vasyl Kolos · Підготовлено для FOLIX-LAB, Мюнхен.</p>
   </div>
 

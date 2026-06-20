@@ -20,7 +20,6 @@
   h1,h2,h3{font-family:var(--df);font-weight:600;line-height:1.1;letter-spacing:-.01em}
   .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
   .ey{font-family:var(--mf);font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;color:var(--ink3)}
-  .ph{color:#ffc266;background:rgba(255,184,77,.1);padding:.05em .4em;border-radius:4px}
   a{color:var(--accent)}
   .head{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:40px;flex-wrap:wrap}
   .brand{display:flex;align-items:center;gap:.55rem;font-family:var(--df);font-weight:600;font-size:1.4rem}
@@ -47,33 +46,32 @@
   td.price{text-align:right;font-family:var(--df);white-space:nowrap;color:var(--ink)}
   td .sub{display:block;font-size:.8rem;color:var(--ink3);margin-top:3px;line-height:1.5}
   .strike{color:var(--ink3);text-decoration:line-through;font-size:.85em;margin-right:6px}
-  .incl{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:8px 0 4px}
-  .incl .c{border:1px solid var(--line);border-radius:12px;padding:14px 15px;background:var(--bg1);position:relative}
-  .incl .c h4{font-family:var(--df);font-size:.95rem;margin-bottom:8px}
-  .incl .c .amt{font-family:var(--mf);font-size:.72rem;color:var(--accent);display:block;margin-bottom:8px}
-  .incl .c ul{gap:5px;margin:0}
-  .incl .c ul li{padding-left:16px;font-size:.8rem}
-  .incl .c ul li::before{width:8px;height:8px;top:.45em}
-  .incl .c.reco{border-color:rgba(33,227,154,.4);background:linear-gradient(135deg,rgba(8,207,142,.06),rgba(196,242,74,.03))}
-  .incl .c .badge{position:absolute;top:-10px;right:14px;background:var(--grad);color:#06120c;font-family:var(--mf);font-size:.58rem;font-weight:700;letter-spacing:.1em;padding:3px 10px;border-radius:6px;text-transform:uppercase}
-  .dir-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+  .dir-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:16px 0}
   .dir-card{border:1px solid var(--line);border-radius:14px;padding:18px;background:var(--bg1);position:relative}
   .dir-card.combo{border-color:rgba(33,227,154,.35);background:linear-gradient(135deg,rgba(8,207,142,.07),rgba(196,242,74,.03))}
   .dir-card .dir-label{font-family:var(--mf);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
   .dir-card .dir-name{font-family:var(--df);font-size:1rem;font-weight:600;margin-bottom:2px}
   .dir-card .dir-price{font-family:var(--df);font-size:1.6rem;color:var(--accent);margin:8px 0 4px}
   .dir-card .dir-price .old{font-size:.9rem;color:var(--ink3);text-decoration:line-through;margin-right:6px}
+  .dir-card .dir-price .per{font-size:.7rem;color:var(--ink3);font-family:var(--mf)}
   .dir-card .dir-save{font-family:var(--mf);font-size:.62rem;color:var(--lime);letter-spacing:.05em;background:rgba(196,242,74,.1);padding:3px 8px;border-radius:4px;display:inline-block;margin-bottom:8px}
   .dir-card .dir-note{font-size:.8rem;color:var(--ink2);line-height:1.5}
   .dir-card .dir-badge{position:absolute;top:-10px;right:14px;background:var(--grad);color:#06120c;font-family:var(--mf);font-size:.58rem;font-weight:700;letter-spacing:.1em;padding:3px 10px;border-radius:6px;text-transform:uppercase}
+  .dir-card .dir-contract{font-family:var(--mf);font-size:.62rem;color:var(--ink3);margin-top:8px;padding-top:8px;border-top:1px solid var(--line)}
+  .check-grid{display:grid;gap:4px;margin:10px 0}
+  .check-grid .row{display:grid;grid-template-columns:1fr 60px 60px 60px;gap:8px;align-items:center;font-size:.82rem;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+  .check-grid .row.head-row{font-family:var(--mf);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);border-bottom:1px solid var(--line);padding-bottom:8px}
+  .check-grid .row .feat{color:var(--ink2)}
+  .check-grid .row .c{text-align:center;font-size:.85rem}
+  .check-grid .row .c.yes{color:var(--accent)}
+  .check-grid .row .c.no{color:var(--ink3);opacity:.4}
   .box{border:1px solid var(--line);border-radius:16px;padding:24px;background:var(--bg1);margin:16px 0}
   .box.green{background:linear-gradient(135deg,rgba(8,207,142,.08),rgba(196,242,74,.04));border-color:rgba(33,227,154,.25)}
   .box.amber{border-color:rgba(255,184,77,.28);background:rgba(255,184,77,.05)}
-  .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
   .pill{display:inline-block;font-family:var(--mf);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border:1px solid var(--line2);border-radius:100px;color:var(--ink2);margin:2px}
-  .cta{margin-top:14px;padding:14px 20px;border-radius:12px;background:var(--grad);color:#06120c;font-weight:700;display:inline-block;font-family:var(--df)}
+  .cta{margin-top:14px;padding:14px 20px;border-radius:12px;background:var(--grad);color:#06120c;font-weight:700;display:inline-block;font-family:var(--df);text-decoration:none}
   .foot{margin-top:50px;padding-top:24px;border-top:1px solid var(--line);font-size:.8rem;color:var(--ink3);line-height:1.8}
-  @media (max-width:680px){.parties,.two,.incl,.dir-grid{grid-template-columns:1fr}.wrap{padding:32px 22px 60px}}
+  @media(max-width:680px){.parties{grid-template-columns:1fr}.dir-grid{grid-template-columns:1fr}.check-grid .row{grid-template-columns:1fr 50px 50px 50px;font-size:.75rem}.wrap{padding:32px 22px 60px}}
 </style>
 </head>
 <body>
@@ -89,9 +87,9 @@
         <span class="pill" style="border-color:var(--accent);color:var(--accent);font-weight:600;margin:2px">DE</span>
         <a href="angebot-opt" class="pill" style="text-decoration:none;margin:2px">UA</a>
       </div>
-      <b>ANGEBOT (Optimiert)</b> № FL-2026-003<br />
-      Datum: 08.06.2026<br />
-      Gültig bis: <b>22.06.2026</b>
+      <b>ANGEBOT</b> № FL-2026-003<br />
+      Datum: 20.06.2026<br />
+      Gültig bis: <b>04.07.2026</b>
     </div>
   </div>
 
@@ -117,129 +115,176 @@
 
   <span class="ey">Website · Video · Local Marketing</span>
   <h1 class="title">Ihre digitale <span class="grad">Sichtbarkeit</span> in München.</h1>
-  <p class="lead">Basierend auf unserem Gespräch habe ich dieses Angebot exakt auf Ihre Prioritäten zugeschnitten – mit Fokus auf maximale lokale Reichweite und hohe Qualität, ohne Kompromisse bei der Präsentation.</p>
+  <p class="lead">Basierend auf unserem Gespräch habe ich dieses Angebot auf Ihre Prioritäten und Ihr Budget zugeschnitten. Alle Preise sind identisch mit unserem bisherigen Angebot — hier nur optimal gebündelt.</p>
 
+  <!-- 01 — BEREITS UMGESETZT -->
   <section>
     <h2><span class="n">01</span>Bereits erfolgreich umgesetzt</h2>
-    <p class="lead">Die Basis ist geschaffen. Ihre Premium-Website ist live und fungiert als digitale Visitenkarte.</p>
     <div class="box green">
-      <p style="margin-bottom:10px"><b>Live unter:</b> &nbsp;<a href="https://folix-lab.de">https://folix-lab.de</a></p>
+      <p style="margin-bottom:10px"><b>Live:</b> &nbsp;<a href="https://folix-lab.de">https://folix-lab.de</a></p>
       <div style="margin-bottom:12px">
         <span class="pill">2 Bereiche: Wrapping + Werbetechnik</span>
-        <span class="pill">4 Sprachen UA · DE · RU · EN</span>
+        <span class="pill">4 Sprachen</span>
         <span class="pill">Mobile Responsive</span>
-        <span class="pill">Impressum + DSGVO</span>
+        <span class="pill">DSGVO</span>
       </div>
-      <p style="font-size:.9rem; border-top:1px solid rgba(255,255,255,.1); padding-top:12px;"><b>Investition Website:</b> <span style="text-decoration:line-through; color:var(--ink3);">1.150 €</span> <b>500 €</b> <span style="color:var(--accent)">(Bereits beglichen / abgeschlossen)</span></p>
+      <p style="font-size:.9rem;border-top:1px solid rgba(255,255,255,.1);padding-top:12px"><b>Website:</b> <span class="strike">1.150 €</span> <b>500 €</b> <span style="color:var(--accent)">✓ Abgeschlossen</span></p>
     </div>
   </section>
 
+  <!-- 02 — EINMALIGES SETUP -->
   <section>
-    <h2><span class="n">02</span>Einmaliges Setup</h2>
-    <p class="lead">Damit Ihre neue Website gefunden wird, ist eine starke Präsenz auf Google Maps und Instagram in München entscheidend.</p>
+    <h2><span class="n">02</span>Einmaliges Setup — Ihre Sichtbarkeit starten</h2>
+    <p class="lead">Die Website steht. Jetzt brauchen Sie Sichtbarkeit auf Google Maps und Instagram, damit Kunden Sie finden.</p>
 
     <div class="dir-grid">
+      <div class="dir-card">
+        <div class="dir-label">Nur Sichtbarkeit</div>
+        <div class="dir-name">Starter</div>
+        <div class="dir-price">690 €</div>
+        <ul style="margin-top:10px;margin-bottom:10px">
+          <li><b>Google Maps</b> für beide Bereiche (Wrapping + Werbetechnik)</li>
+          <li>Keyword-Recherche, Bewertungs-Strategie</li>
+        </ul>
+        <div class="dir-note">Minimal-Start: Beide Bereiche auf Google Maps sichtbar machen.</div>
+      </div>
+
       <div class="dir-card combo">
         <div class="dir-badge">Empfehlung</div>
-        <div class="dir-label">Passend zum Budget</div>
-        <div class="dir-name">Local Starter Paket</div>
+        <div class="dir-label">Sichtbarkeit + Branding</div>
+        <div class="dir-name">Starter+</div>
         <div class="dir-price">1.180 €</div>
-        <ul style="margin-top:12px; margin-bottom:12px">
-          <li><b>Google Maps für BEIDE Bereiche</b> (Wrapping & Werbetechnik): Einrichtung, SEO-Optimierung, Keywords, Bewertungs-Strategie (Wert: 690 €)</li>
-          <li><b>Instagram Branding für 1 Profil</b> (z.B. Wrapping): Vorlagen, Highlights, Profil-Optimierung, 3 Start-Beiträge (Wert: 490 €)</li>
+        <ul style="margin-top:10px;margin-bottom:10px">
+          <li><b>Google Maps</b> für beide Bereiche (690 €)</li>
+          <li><b>Instagram Branding</b> für 1 Profil: Vorlagen, Highlights, Bio, 3 Start-Posts (490 €)</li>
         </ul>
-        <div class="dir-note">Ideal für den Start: Wir bringen beide Geschäftsbereiche auf Google Maps nach vorne und etablieren einen professionellen Look auf Instagram. <br><br><i>(Ohne Videoproduktion)</i></div>
+        <div class="dir-note">Ideal für Ihr Budget. Google Maps + professioneller Instagram-Auftritt.</div>
       </div>
-      
+
       <div class="dir-card">
-        <div class="dir-label">Maximale Sichtbarkeit</div>
-        <div class="dir-name">Content & Local Kombi</div>
+        <div class="dir-label">Maximale Wirkung</div>
+        <div class="dir-name">Full Launch</div>
         <div class="dir-price"><span class="old">1.870 €</span>1.790 €</div>
         <div class="dir-save">Sie sparen 80 €</div>
-        <ul style="margin-top:12px; margin-bottom:12px">
-          <li><b>Google Maps für BEIDE Bereiche</b> (Wert: 690 €)</li>
-          <li><b>Instagram Branding BEIDE Profile</b> (Wert: 590 €)</li>
-          <li><b>Promo-Video Kompakt:</b> 1 Drehtag vor Ort, professioneller Schnitt inkl. Reels für Instagram (Wert: 590 €)</li>
+        <ul style="margin-top:10px;margin-bottom:10px">
+          <li><b>Google Maps</b> für beide Bereiche (690 €)</li>
+          <li><b>Instagram Branding</b> für beide Profile (590 €)</li>
+          <li><b>Promo-Video Kompakt:</b> 1 Drehtag + Schnitt (590 €)</li>
         </ul>
-        <div class="dir-note">Das Rundum-Sorglos-Paket. Inklusive Premium-Videoaufnahmen vor Ort, um Vertrauen zu schaffen.</div>
+        <div class="dir-note">Das Komplett-Paket: Maps + Instagram + Video.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 — MONATLICHE BETREUUNG -->
+  <section>
+    <h2><span class="n">03</span>Monatliche Betreuung — 6-Monats-Vertrag</h2>
+    <p class="lead">Lokales SEO ist kein Sprint, sondern ein Marathon. Mit einer Mindestlaufzeit von <b>6 Monaten</b> geben wir Ihnen einen Vorteilspreis — und ausreichend Zeit, um nachweisbare Ergebnisse zu erzielen.</p>
+
+    <div class="dir-grid">
+      <div class="dir-card">
+        <div class="dir-label">1 Bereich</div>
+        <div class="dir-name">Sichtbar</div>
+        <div class="dir-price">390 € <span class="per">/ Monat</span></div>
+        <div class="dir-save">Vertragsvorteil</div>
+        <ul style="margin-top:10px;margin-bottom:10px">
+          <li><b>Local SEO</b> für 1 Google-Profil</li>
+          <li>4 SEO-Beiträge / Monat</li>
+          <li>Bewertungs-Management</li>
+          <li>Website-Wartung (bis 1 Std.)</li>
+          <li>Monatlicher Report</li>
+        </ul>
+        <div class="dir-contract">6 × 390 € = <b>2.340 €</b> Gesamtlaufzeit<br>Ohne Vertrag: 450 €/Mon.</div>
+      </div>
+
+      <div class="dir-card combo">
+        <div class="dir-badge">Empfehlung</div>
+        <div class="dir-label">2 Bereiche + Instagram</div>
+        <div class="dir-name">Dominant</div>
+        <div class="dir-price">690 € <span class="per">/ Monat</span></div>
+        <div class="dir-save">Bester ROI</div>
+        <ul style="margin-top:10px;margin-bottom:10px">
+          <li><b>Local SEO</b> für beide Google-Profile</li>
+          <li>8 SEO-Beiträge / Monat (4 pro Profil)</li>
+          <li>Bewertungs-Management</li>
+          <li><b>Instagram-Content:</b> 4 Posts / Monat</li>
+          <li>Website-Wartung (bis 2 Std.)</li>
+          <li>15-Min. Strategie-Call / Monat</li>
+          <li>Monatlicher Report</li>
+        </ul>
+        <div class="dir-contract">6 × 690 € = <b>4.140 €</b> Gesamtlaufzeit<br>Ohne Vertrag: 790 €/Mon.</div>
+      </div>
+
+      <div class="dir-card">
+        <div class="dir-label">Full Digital</div>
+        <div class="dir-name">Total</div>
+        <div class="dir-price">990 € <span class="per">/ Monat</span></div>
+        <div class="dir-save">Maximale Sichtbarkeit</div>
+        <ul style="margin-top:10px;margin-bottom:10px">
+          <li><b>Local SEO</b> für beide Google-Profile</li>
+          <li>8 SEO-Beiträge / Monat</li>
+          <li>Bewertungs-Management</li>
+          <li><b>Instagram-Betreuung:</b> 6 Posts + Stories</li>
+          <li><b>2 Reels / Monat</b> (aus Ihrem Material)</li>
+          <li>Website-Wartung (bis 3 Std.)</li>
+          <li>30-Min. Strategie-Session / Monat</li>
+          <li>Erweiterter Report + Wettbewerber</li>
+        </ul>
+        <div class="dir-contract">6 × 990 € = <b>5.940 €</b> Gesamtlaufzeit<br>Ohne Vertrag: 1.150 €/Mon.</div>
       </div>
     </div>
 
-    <h3 style="font-family:var(--df);font-size:1.1rem;margin:36px 0 6px;color:var(--ink)">Video-Produktion (Einzeln)</h3>
+    <div class="box" style="padding:16px 20px;margin-top:16px">
+      <p style="font-size:.85rem;color:var(--ink2)"><b style="color:var(--accent)">Hinweis zum Vertrag:</b> Mindestlaufzeit 6 Monate, danach monatlich kündbar mit 30 Tagen Vorlauf. Ohne Vertrag gelten die regulären Einzelpreise.</p>
+    </div>
+  </section>
+
+  <!-- 04 — VIDEO -->
+  <section>
+    <h2><span class="n">04</span>Video-Produktion — einzeln buchbar</h2>
     <table>
       <tr><th>Leistung</th><th></th><th style="text-align:right">Netto</th></tr>
       <tr>
-        <td><b>Video-Paket "Kompakt"</b> — 1 Drehtag vor Ort in München, professioneller Schnitt für Website (Querformat) und Social Media (1 Reel)<span class="sub">Hochwertige Aufnahmen mit professionellem Equipment, lizenzierte Musik.</span></td>
+        <td><b>Promo-Video „Kompakt"</b> — 1 Drehtag München, Schnitt Website + 1 Reel<span class="sub">Professionelles Equipment, lizenzierte Musik.</span></td>
         <td></td><td class="price">590 €</td>
       </tr>
       <tr>
-        <td><b>Video-Paket "Full"</b> — 3 Drehtage (Vorher / Während / Nachher), Schnitt für YouTube + 2-3 Reels<span class="sub">Perfekt, um den kompletten Prozess einer Folierung hochprofessionell zu dokumentieren.</span></td>
+        <td><b>Video-Paket „Full"</b> — 3 Drehtage (Vorher/Während/Nachher), YouTube + 2–3 Reels<span class="sub">Kompletter Prozess hochprofessionell dokumentiert.</span></td>
         <td></td><td class="price">1.290 €</td>
+      </tr>
+      <tr>
+        <td><b>Reels-Abonnement</b> — 2 fertige Reels/Monat<span class="sub">Dreh + Schnitt vor Ort. Instagram & TikTok.</span></td>
+        <td></td><td class="price">390 €/Mon.</td>
       </tr>
     </table>
   </section>
 
+  <!-- 05 — DRITTKOSTEN -->
   <section>
-    <h2><span class="n">03</span>Monatliche Betreuung</h2>
-    <p class="lead">Lokales SEO ist kein Sprint, sondern ein Marathon. Wir pushen Ihr Ranking auf Google Maps kontinuierlich nach oben.</p>
-
-    <div class="dir-grid">
-      <div class="dir-card">
-        <div class="dir-label">1 Bereich / Monat</div>
-        <div class="dir-name">Local SEO Basis</div>
-        <div class="dir-price">350 €</div>
-        <ul style="margin-top:12px; margin-bottom:12px">
-          <li><b>Aktives SEO für 1 Hauptprofil</b> (z.B. Car Wrapping)</li>
-          <li>4 SEO-Beiträge pro Monat</li>
-          <li>Management von Rezensionen</li>
-          <li>Website-Wartung (kleine Updates) inklusive</li>
-        </ul>
-        <div class="dir-note">Fokussiert sich voll auf das profitabelste Standbein (Folierung), exakt im Rahmen Ihres Budgets.</div>
-      </div>
-
-      <div class="dir-card combo">
-        <div class="dir-badge">Empfehlung</div>
-        <div class="dir-label">2 Bereiche / Monat</div>
-        <div class="dir-name">Local SEO Kombi</div>
-        <div class="dir-price"><span class="old">700 €</span>490 €</div>
-        <div class="dir-save">Bester Value</div>
-        <ul style="margin-top:12px; margin-bottom:12px">
-          <li><b>Aktives SEO für BEIDE Google Profile</b> (Wrapping + Werbetechnik)</li>
-          <li>4 SEO-Beiträge pro Profil / Monat</li>
-          <li>Beantwortung & Management von Rezensionen</li>
-          <li>Website-Wartung (kleine Updates) inklusive</li>
-        </ul>
-        <div class="dir-note">Für nur 140€ mehr decken Sie auch den Bereich Werbetechnik komplett ab und verdoppeln Ihre Sichtbarkeit in München.</div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2><span class="n">04</span>Drittkosten (direkt an Anbieter)</h2>
+    <h2><span class="n">05</span>Drittkosten (direkt an Anbieter)</h2>
     <table>
       <tr><td>Domain <b>folix-lab.de</b><span class="sub">Bereits vorhanden</span></td><td></td><td class="price">~6–12 €/Jahr</td></tr>
-      <tr><td>Profi-Mail @folix-lab.de — <b>Google Workspace</b><span class="sub">Optional, Migration Ihrer Mails auf Gmail (eigener Domain)</span></td><td></td><td class="price">~6–14 €/Monat</td></tr>
-      <tr><td>Hosting<span class="sub">Vercel / Cloudflare Pages</span></td><td></td><td class="price">0 €</td></tr>
-      <tr><td>Google Profil (Maps)</td><td></td><td class="price">Kostenlos</td></tr>
+      <tr><td>Profi-Mail — <b>Google Workspace</b><span class="sub">Optional</span></td><td></td><td class="price">~6–14 €/Mon.</td></tr>
+      <tr><td>Hosting<span class="sub">Vercel / Cloudflare</span></td><td></td><td class="price">0 €</td></tr>
+      <tr><td>Google-Profil (Maps)</td><td></td><td class="price">Kostenlos</td></tr>
     </table>
-    <p style="font-size:.84rem;color:var(--ink2)">Diese Kosten zahlen Sie direkt an die Provider, es ist <b>kein</b> Honorar für mich.</p>
   </section>
 
+  <!-- 06 — WAS ICH BRAUCHE -->
   <section>
-    <h2><span class="n">05</span>Was ich von Ihnen brauche (für den Start)</h2>
+    <h2><span class="n">06</span>Was ich von Ihnen brauche</h2>
     <ul>
-      <li><b>Gewerbeanmeldung</b> + Angabe der <b>Besteuerungsform</b> (Kleinunternehmer oder Regelbesteuerung) für ein rechtssicheres Impressum</li>
-      <li>Telefonnummer & Social Media Links</li>
-      <li>Bilder von ersten Projekten für das Setup der Profile (falls kein Videopaket gebucht wird)</li>
+      <li><b>Gewerbeanmeldung</b> + <b>Besteuerungsform</b> (Kleinunternehmer / Regelbesteuerung)</li>
+      <li>Telefonnummer & Social-Media-Links</li>
+      <li>Erste Fotos/Videos Ihrer Projekte</li>
     </ul>
-    <p style="font-size:.84rem;color:var(--ink3)">Die rechtliche Verantwortung für die Inhalte im Impressum liegt beim Auftraggeber.</p>
   </section>
 
-  <a class="cta" href="https://folix-lab.de">Zum Live-Demo der Website →</a>
+  <a class="cta" href="https://folix-lab.de">Website ansehen →</a>
 
   <div class="foot">
-    <p>Alle Preise verstehen sich in <b>EUR, netto</b>. Aufgrund der Kleinunternehmerregelung gemäß § 19 UStG wird keine Umsatzsteuer erhoben.</p>
-    <p>Gültigkeit des Angebots: bis <b>22.06.2026</b>. Laufende Kosten (Domain, Workspace) werden direkt an die jeweiligen Drittanbieter gezahlt.</p>
+    <p>Alle Preise in <b>EUR, netto</b>. Gem. § 19 UStG wird keine Umsatzsteuer erhoben.</p>
+    <p>Gültig bis <b>04.07.2026</b>. Drittkosten werden direkt an die Anbieter gezahlt.</p>
     <p>© 2026 · Vasyl Kolos · Erstellt für FOLIX-LAB, München.</p>
   </div>
 
