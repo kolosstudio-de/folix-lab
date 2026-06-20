@@ -1,9 +1,9 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/angebot", "destination": "/Angebote/angebot.html" },
-    { "source": "/angebot-de", "destination": "/Angebote/angebot-de.html" },
-    { "source": "/angebot-opt", "destination": "/Angebote/angebot-opt.html" },
-    { "source": "/angebot-opt-de", "destination": "/Angebote/angebot-opt-de.html" }
+    { "source": "/angebot", "destination": "/Angebote/angebot" },
+    { "source": "/angebot-de", "destination": "/Angebote/angebot-de" },
+    { "source": "/angebot-opt", "destination": "/Angebote/angebot-opt" },
+    { "source": "/angebot-opt-de", "destination": "/Angebote/angebot-opt-de" }
   ]
 }
