@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Комерційна пропозиція · FOLIX-LAB · Сайт, відео, локальний маркетинг</title>
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="../assets/css/fonts.css" />
+<style>
+  :root{
+    --bg:#08090b; --bg1:#0c0e12; --bg2:#12151b; --ink:#f2f4f7; --ink2:#a7adb8; --ink3:#8e95a0;
+    --line:rgba(255,255,255,.1); --line2:rgba(255,255,255,.16);
+    --grad:linear-gradient(100deg,#08cf8e,#21e39a,#79efa1,#c4f24a);
+    --accent:#19cf83; --lime:#c4f24a;
+    --df:'Unbounded','Manrope',sans-serif; --bf:'Manrope',system-ui,sans-serif; --mf:'JetBrains Mono',monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font-family:var(--bf);line-height:1.6;font-size:15px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:880px;margin:0 auto;padding:48px 40px 80px}
+  h1,h2,h3{font-family:var(--df);font-weight:600;line-height:1.1;letter-spacing:-.01em}
+  .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .ey{font-family:var(--mf);font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;color:var(--ink3)}
+  .ph{color:#ffc266;background:rgba(255,184,77,.1);padding:.05em .4em;border-radius:4px}
+  a{color:var(--accent)}
+  .head{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:40px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:.55rem;font-family:var(--df);font-weight:600;font-size:1.4rem}
+  .brand svg{width:30px;height:30px;flex:none}
+  .head__meta{font-family:var(--mf);font-size:.72rem;color:var(--ink2);text-align:right;line-height:1.9}
+  .head__meta b{color:var(--ink)}
+  .parties{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:40px}
+  .party{border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:var(--bg1)}
+  .party .ey{margin-bottom:8px;display:block}
+  .party p{font-size:.92rem;color:var(--ink2)}
+  .party b{color:var(--ink)}
+  h1.title{font-size:clamp(2rem,5vw,3rem);margin:8px 0 18px}
+  section{margin:36px 0}
+  h2{font-size:1.45rem;margin-bottom:14px}
+  h2 .n{font-family:var(--mf);font-size:.9rem;color:var(--accent);margin-right:.5em}
+  p.lead{color:var(--ink2);margin-bottom:14px}
+  ul{list-style:none;display:grid;gap:8px;margin:12px 0}
+  ul li{padding-left:26px;position:relative;color:var(--ink2)}
+  ul li::before{content:"";position:absolute;left:0;top:.45em;width:14px;height:14px;border-radius:50%;background:var(--grad)}
+  ul li b{color:var(--ink)}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.92rem}
+  th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-family:var(--mf);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);font-weight:400}
+  td.price{text-align:right;font-family:var(--df);white-space:nowrap;color:var(--ink)}
+  td .sub{display:block;font-size:.8rem;color:var(--ink3);margin-top:3px;line-height:1.5}
+  .strike{color:var(--ink3);text-decoration:line-through;font-size:.85em;margin-right:6px}
+  .incl{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:8px 0 4px}
+  .incl .c{border:1px solid var(--line);border-radius:12px;padding:14px 15px;background:var(--bg1);position:relative}
+  .incl .c h4{font-family:var(--df);font-size:.95rem;margin-bottom:8px}
+  .incl .c .amt{font-family:var(--mf);font-size:.72rem;color:var(--accent);display:block;margin-bottom:8px}
+  .incl .c ul{gap:5px;margin:0}
+  .incl .c ul li{padding-left:16px;font-size:.8rem}
+  .incl .c ul li::before{width:8px;height:8px;top:.45em}
+  .incl .c.reco{border-color:rgba(33,227,154,.4);background:linear-gradient(135deg,rgba(8,207,142,.06),rgba(196,242,74,.03))}
+  .incl .c .badge{position:absolute;top:-10px;right:14px;background:var(--grad);color:#06120c;font-family:var(--mf);font-size:.58rem;font-weight:700;letter-spacing:.1em;padding:3px 10px;border-radius:6px;text-transform:uppercase}
+  .dir-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+  .dir-card{border:1px solid var(--line);border-radius:14px;padding:18px;background:var(--bg1);position:relative}
+  .dir-card.combo{border-color:rgba(33,227,154,.35);background:linear-gradient(135deg,rgba(8,207,142,.07),rgba(196,242,74,.03))}
+  .dir-card .dir-label{font-family:var(--mf);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+  .dir-card .dir-name{font-family:var(--df);font-size:1rem;font-weight:600;margin-bottom:2px}
+  .dir-card .dir-price{font-family:var(--df);font-size:1.6rem;color:var(--accent);margin:8px 0 4px}
+  .dir-card .dir-price .old{font-size:.9rem;color:var(--ink3);text-decoration:line-through;margin-right:6px}
+  .dir-card .dir-save{font-family:var(--mf);font-size:.62rem;color:var(--lime);letter-spacing:.05em;background:rgba(196,242,74,.1);padding:3px 8px;border-radius:4px;display:inline-block;margin-bottom:8px}
+  .dir-card .dir-note{font-size:.8rem;color:var(--ink2);line-height:1.5}
+  .dir-card .dir-badge{position:absolute;top:-10px;right:14px;background:var(--grad);color:#06120c;font-family:var(--mf);font-size:.58rem;font-weight:700;letter-spacing:.1em;padding:3px 10px;border-radius:6px;text-transform:uppercase}
+  .box{border:1px solid var(--line);border-radius:16px;padding:24px;background:var(--bg1);margin:16px 0}
+  .box.green{background:linear-gradient(135deg,rgba(8,207,142,.08),rgba(196,242,74,.04));border-color:rgba(33,227,154,.25)}
+  .box.amber{border-color:rgba(255,184,77,.28);background:rgba(255,184,77,.05)}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .pill{display:inline-block;font-family:var(--mf);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border:1px solid var(--line2);border-radius:100px;color:var(--ink2);margin:2px}
+  .cta{margin-top:14px;padding:14px 20px;border-radius:12px;background:var(--grad);color:#06120c;font-weight:700;display:inline-block;font-family:var(--df)}
+  .foot{margin-top:50px;padding-top:24px;border-top:1px solid var(--line);font-size:.8rem;color:var(--ink3);line-height:1.8}
+  @media (max-width:680px){.parties,.two,.incl,.dir-grid{grid-template-columns:1fr}.wrap{padding:32px 22px 60px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="head">
+    <div class="brand">
+      <svg viewBox="0 0 34 34" aria-hidden="true"><defs><linearGradient id="fg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#08cf8e"/><stop offset=".5" stop-color="#21e39a"/><stop offset="1" stop-color="#c4f24a"/></linearGradient></defs><path d="M5 4 H29 L24 10 H11 V15 H22 L18 21 H11 V30 H5 Z" fill="url(#fg)"/></svg>
+      <span>FOLIX<span class="grad">-</span>LAB</span>
+    </div>
+    <div class="head__meta">
+      <div class="lang-switch" style="margin-bottom:8px">
+        <a href="angebot-opt-de" class="pill" style="text-decoration:none;margin:2px">DE</a>
+        <span class="pill" style="border-color:var(--accent);color:var(--accent);font-weight:600;margin:2px">UA</span>
+      </div>
+      <b>ПРОПОЗИЦІЯ (Оптимізована)</b> № FL-2026-003<br />
+      Дата: 08.06.2026<br />
+      Дійсна до: <b>22.06.2026</b>
+    </div>
+  </div>
+
+  <div class="parties">
+    <div class="party">
+      <span class="ey">Від (виконавець)</span>
+      <p><b>Vasyl Kolos</b><br />
+      Ruckäckerweg 4<br />
+      93055 Regensburg<br />
+      info@kolosstudio.de<br />
+      +49 175 3797913<br />
+      Steuernummer: 244/238/91587</p>
+    </div>
+    <div class="party">
+      <span class="ey">Кому (клієнт)</span>
+      <p><b>FOLIX-LAB</b> — Hakhun Valerii<br />
+      Atterseestraße 15<br />
+      81241 München<br />
+      info@folix-lab.de<br />
+      +49 176 84569888</p>
+    </div>
+  </div>
+
+  <span class="ey">Сайт · Відео · Локальний маркетинг</span>
+  <h1 class="title">Ваша цифрова <span class="grad">видимість</span> у Мюнхені.</h1>
+  <p class="lead">На основі нашої розмови я адаптував цю пропозицію точно під ваш бюджет (близько 1.000 € разово / близько 350 € щомісяця) з фокусом на максимальне повернення інвестицій (ROI) для обох напрямків (Wrapping та Werbetechnik).</p>
+
+  <section>
+    <h2><span class="n">01</span>Вже успішно реалізовано</h2>
+    <p class="lead">Базу створено. Ваша преміум-візитка вже в онлайні і готова приймати клієнтів.</p>
+    <div class="box green">
+      <p style="margin-bottom:10px"><b>Демо:</b> &nbsp;<a href="https://folix-lab.vercel.app">https://folix-lab.vercel.app</a></p>
+      <div style="margin-bottom:12px">
+        <span class="pill">2 напрямки: Wrapping + Werbetechnik</span>
+        <span class="pill">4 мови UA · DE · RU · EN</span>
+        <span class="pill">Мобільна адаптація</span>
+        <span class="pill">Impressum + DSGVO</span>
+      </div>
+      <p style="font-size:.9rem; border-top:1px solid rgba(255,255,255,.1); padding-top:12px;"><b>Інвестиція в сайт:</b> <span style="text-decoration:line-through; color:var(--ink3);">1.150 €</span> <b>500 €</b> <span style="color:var(--accent)">(Вже узгоджено / оплачено)</span></p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span>Разове налаштування (бюджет ~1.000 €)</h2>
+    <p class="lead">Щоб ваш новий сайт знаходили клієнти, присутність на Google Maps у Мюнхені є вирішальною. Ми склали пакети, які ідеально вписуються в заявлений бюджет.</p>
+
+    <div class="dir-grid">
+      <div class="dir-card combo">
+        <div class="dir-badge">Рекомендація</div>
+        <div class="dir-label">Google Maps + Promo Video</div>
+        <div class="dir-name">Стартовий пакет "Visual & Local"</div>
+        <div class="dir-price"><span class="old">1.280 €</span>1.090 €</div>
+        <div class="dir-save">Економія 190 €</div>
+        <ul style="margin-top:12px; margin-bottom:12px">
+          <li><b>Google Профілі для ОБОХ напрямків</b> (Wrapping & Werbetechnik): Налаштування, оптимізація, ключові слова, стратегія відгуків (Звичайна ціна: 690 €)</li>
+          <li><b>Професійне Promo-відео:</b> 1 знімальний день у Мюнхені. Монтаж відео для сайту (горизонтальне) + 1 вертикальне Reel (Звичайна ціна: 590 €)</li>
+        </ul>
+        <div class="dir-note">Трохи вище бюджету в 1000€, але приносить шалену довіру завдяки професійному відео + подвійній видимості на картах.</div>
+      </div>
+      
+      <div class="dir-card">
+        <div class="dir-label">Лише видимість</div>
+        <div class="dir-name">Local Starter (Maps & Insta)</div>
+        <div class="dir-price"><span class="old">1.180 €</span>990 €</div>
+        <div class="dir-save">Ідеально в бюджеті</div>
+        <ul style="margin-top:12px; margin-bottom:12px">
+          <li><b>Google Профілі для ОБОХ напрямків</b> (Wrapping & Werbetechnik): Повне налаштування (Звичайна ціна: 690 €)</li>
+          <li><b>Instagram Branding для 1 профілю</b>: Дизайн, хайлайтс, оптимізація біо, 3 стартових пости (Звичайна ціна: 490 €)</li>
+        </ul>
+        <div class="dir-note">Ідеально підійде, якщо ви зможете створювати гарний візуальний контент самостійно.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span>Щомісячний супровід (бюджет ~350 €)</h2>
+    <p class="lead">Локальне SEO — це не спринт, а марафон. Ми стабільно просуватимемо ваші профілі на Google Maps до топ-3.</p>
+
+    <div class="dir-grid">
+      <div class="dir-card combo">
+        <div class="dir-badge">Рекомендація</div>
+        <div class="dir-label">2 напрямки / місяць</div>
+        <div class="dir-name">Local SEO Kombi</div>
+        <div class="dir-price"><span class="old">490 €</span>390 €</div>
+        <div class="dir-save">Найкращий ROI</div>
+        <ul style="margin-top:12px; margin-bottom:12px">
+          <li><b>Активне SEO для ОБОХ профілів</b> (Wrapping + Werbetechnik)</li>
+          <li>4 SEO-пости на місяць з ключовими словами</li>
+          <li>Обробка та управління відгуками</li>
+          <li>Технічна підтримка сайту включена</li>
+          <li>Щомісячний звіт про позиції</li>
+        </ul>
+        <div class="dir-note">Ідеально адаптовано для цільової аудиторії в Мюнхені. На 40€ вище 350€, але закриває одразу два бізнеси.</div>
+      </div>
+      
+      <div class="dir-card">
+        <div class="dir-label">1 напрямок / місяць</div>
+        <div class="dir-name">Local SEO Basis</div>
+        <div class="dir-price">290 €</div>
+        <ul style="margin-top:12px; margin-bottom:12px">
+          <li><b>Активне SEO лише для головного профілю</b> (напр. Wrapping)</li>
+          <li>4 SEO-пости на місяць</li>
+          <li>Управління відгуками</li>
+          <li>Щомісячний звіт про позиції</li>
+        </ul>
+        <div class="dir-note">Дешевший старт, але фокусується лише на одній найбільш прибутковій гілці.</div>
+      </div>
+    </div>
+    
+    <div class="box amber" style="margin-top:20px">
+      <p style="font-size:.9rem"><b>Опціональна підтримка сайту:</b> Якщо ви не берете місячний SEO-пакет, подальша підтримка/розширення сайту коштуватиме <b>65 € / год</b> за запитом. У пакеті за 390€ дрібні правки на сайті (замінити фото, текст) <b>вже включені у вартість</b>.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span>Сторонні витрати (платите напряму)</h2>
+    <table>
+      <tr><td>Домен <b>folix-lab.de</b><span class="sub">Вже є</span></td><td></td><td class="price">~6–12 €/рік</td></tr>
+      <tr><td>Проф-пошта @folix-lab.de — <b>Google Workspace</b><span class="sub">Опціонально. Міграція наявної пошти на Workspace (Gmail)</span></td><td></td><td class="price">~6–14 €/міс</td></tr>
+      <tr><td>Хостинг<span class="sub">Vercel / Cloudflare Pages</span></td><td></td><td class="price">0 €</td></tr>
+      <tr><td>Google-профіль (Maps)</td><td></td><td class="price">безкоштовно</td></tr>
+    </table>
+    <p style="font-size:.84rem;color:var(--ink2)">Ці витрати йдуть напряму провайдерам — це <b>не</b> мій гонорар.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">05</span>Що мені потрібно від вас (для старту)</h2>
+    <ul>
+      <li><b>Gewerbeanmeldung</b> + ваша <b>форма оподаткування</b> (Kleinunternehmer чи Regelbesteuerung) — для коректного Impressum</li>
+      <li><b>Доступ (логін) до домену</b> folix-lab.de — щоб опублікувати сайт</li>
+      <li><b>Номер телефону</b> та посилання на соцмережі</li>
+      <li><b>Перші фото / відео</b> ваших робіт для заповнення профілів</li>
+    </ul>
+    <p style="font-size:.84rem;color:var(--ink3)">Юридична відповідальність за зміст Impressum лежить на замовнику.</p>
+  </section>
+
+  <a class="cta" href="https://folix-lab.vercel.app">Переглянути демо сайту →</a>
+
+  <div class="foot">
+    <p>Усі ціни в <b>EUR, нетто</b>. Як Kleinunternehmer згідно § 19 UStG ПДВ не нараховується.</p>
+    <p>Термін дії пропозиції — до <b>22.06.2026</b>. Сторонні витрати (домен, пошта) оплачуються напряму провайдерам.</p>
+    <p>© 2026 · Vasyl Kolos · Підготовлено для FOLIX-LAB, Мюнхен.</p>
+  </div>
+
+</div>
+</body>
+</html>

@@ -2,6 +2,8 @@
   "cleanUrls": true,
   "rewrites": [
     { "source": "/angebot", "destination": "/Angebote/angebot.html" },
-    { "source": "/angebot-de", "destination": "/Angebote/angebot-de.html" }
+    { "source": "/angebot-de", "destination": "/Angebote/angebot-de.html" },
+    { "source": "/angebot-opt", "destination": "/Angebote/angebot-opt.html" },
+    { "source": "/angebot-opt-de", "destination": "/Angebote/angebot-opt-de.html" }
   ]
 }
