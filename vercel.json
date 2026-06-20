@@ -1,3 +1,7 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/angebot", "destination": "/Angebote/angebot.html" },
+    { "source": "/angebot-de", "destination": "/Angebote/angebot-de.html" }
+  ]
 }
