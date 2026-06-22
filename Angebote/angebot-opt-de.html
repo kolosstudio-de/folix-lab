@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Angebot · FOLIX-LAB · Website, Video, Local Marketing</title>
+<title>Angebot · FOLIX-LAB · Website, Marketing, Content</title>
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
 <link rel="stylesheet" href="../assets/css/fonts.css" />
 <style>
@@ -46,7 +46,7 @@
   td.price{text-align:right;font-family:var(--df);white-space:nowrap;color:var(--ink)}
   td .sub{display:block;font-size:.8rem;color:var(--ink3);margin-top:3px;line-height:1.5}
   .strike{color:var(--ink3);text-decoration:line-through;font-size:.85em;margin-right:6px}
-  .dir-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:16px 0}
+  .dir-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
   .dir-card{border:1px solid var(--line);border-radius:14px;padding:18px;background:var(--bg1);position:relative}
   .dir-card.combo{border-color:rgba(33,227,154,.35);background:linear-gradient(135deg,rgba(8,207,142,.07),rgba(196,242,74,.03))}
   .dir-card .dir-label{font-family:var(--mf);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
@@ -58,20 +58,18 @@
   .dir-card .dir-note{font-size:.8rem;color:var(--ink2);line-height:1.5}
   .dir-card .dir-badge{position:absolute;top:-10px;right:14px;background:var(--grad);color:#06120c;font-family:var(--mf);font-size:.58rem;font-weight:700;letter-spacing:.1em;padding:3px 10px;border-radius:6px;text-transform:uppercase}
   .dir-card .dir-contract{font-family:var(--mf);font-size:.62rem;color:var(--ink3);margin-top:8px;padding-top:8px;border-top:1px solid var(--line)}
-  .check-grid{display:grid;gap:4px;margin:10px 0}
-  .check-grid .row{display:grid;grid-template-columns:1fr 60px 60px 60px;gap:8px;align-items:center;font-size:.82rem;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05)}
-  .check-grid .row.head-row{font-family:var(--mf);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);border-bottom:1px solid var(--line);padding-bottom:8px}
-  .check-grid .row .feat{color:var(--ink2)}
-  .check-grid .row .c{text-align:center;font-size:.85rem}
-  .check-grid .row .c.yes{color:var(--accent)}
-  .check-grid .row .c.no{color:var(--ink3);opacity:.4}
   .box{border:1px solid var(--line);border-radius:16px;padding:24px;background:var(--bg1);margin:16px 0}
   .box.green{background:linear-gradient(135deg,rgba(8,207,142,.08),rgba(196,242,74,.04));border-color:rgba(33,227,154,.25)}
   .box.amber{border-color:rgba(255,184,77,.28);background:rgba(255,184,77,.05)}
   .pill{display:inline-block;font-family:var(--mf);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border:1px solid var(--line2);border-radius:100px;color:var(--ink2);margin:2px}
   .cta{margin-top:14px;padding:14px 20px;border-radius:12px;background:var(--grad);color:#06120c;font-weight:700;display:inline-block;font-family:var(--df);text-decoration:none}
   .foot{margin-top:50px;padding-top:24px;border-top:1px solid var(--line);font-size:.8rem;color:var(--ink3);line-height:1.8}
-  @media(max-width:680px){.parties{grid-template-columns:1fr}.dir-grid{grid-template-columns:1fr}.check-grid .row{grid-template-columns:1fr 50px 50px 50px;font-size:.75rem}.wrap{padding:32px 22px 60px}}
+  .sum{margin-top:20px;border:1px solid rgba(33,227,154,.35);border-radius:16px;padding:20px 24px;background:linear-gradient(135deg,rgba(8,207,142,.06),rgba(196,242,74,.02))}
+  .sum-row{display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;font-size:.92rem}
+  .sum-row.total{border-top:1px solid var(--line);margin-top:8px;padding-top:12px;font-weight:700;font-size:1rem}
+  .sum-row .sum-price{font-family:var(--df);color:var(--accent);white-space:nowrap}
+  .new-badge{display:inline-block;font-family:var(--mf);font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border-radius:4px;background:rgba(196,242,74,.15);color:var(--lime);margin-left:6px;vertical-align:middle}
+  @media(max-width:680px){.parties{grid-template-columns:1fr}.dir-grid{grid-template-columns:1fr}.wrap{padding:32px 22px 60px}}
 </style>
 </head>
 <body>
@@ -87,15 +85,15 @@
         <span class="pill" style="border-color:var(--accent);color:var(--accent);font-weight:600;margin:2px">DE</span>
         <a href="angebot-opt" class="pill" style="text-decoration:none;margin:2px">UA</a>
       </div>
-      <b>ANGEBOT</b> № FL-2026-003<br />
-      Datum: 20.06.2026<br />
-      Gültig bis: <b>04.07.2026</b>
+      <b>ANGEBOT</b> Nr. FL-2026-003<br />
+      Datum: 22.06.2026<br />
+      Gültig bis: <b>06.07.2026</b>
     </div>
   </div>
 
   <div class="parties">
     <div class="party">
-      <span class="ey">Von (Dienstleister)</span>
+      <span class="ey">Von (Auftragnehmer)</span>
       <p><b>Vasyl Kolos</b><br />
       Ruckäckerweg 4<br />
       93055 Regensburg<br />
@@ -104,7 +102,7 @@
       Steuernummer: 244/238/91587</p>
     </div>
     <div class="party">
-      <span class="ey">An (Kunde)</span>
+      <span class="ey">An (Auftraggeber)</span>
       <p><b>FOLIX-LAB</b> — Hakhun Valerii<br />
       Atterseestraße 15<br />
       81241 München<br />
@@ -113,178 +111,177 @@
     </div>
   </div>
 
-  <span class="ey">Website · Video · Local Marketing</span>
-  <h1 class="title">Ihre digitale <span class="grad">Sichtbarkeit</span> in München.</h1>
-  <p class="lead">Basierend auf unserem Gespräch habe ich dieses Angebot auf Ihre Prioritäten und Ihr Budget zugeschnitten. Alle Preise sind identisch mit unserem bisherigen Angebot — hier nur optimal gebündelt.</p>
+  <span class="ey">Website · Marketing · Content</span>
+  <h1 class="title">Nächster Schritt: <span class="grad">Sichtbarkeit</span> in München.</h1>
+  <p class="lead">Die Website ist online. Jetzt geht es darum, dass Kunden Sie finden. Dieses Angebot ist auf Ihr Budget zugeschnitten — mit denselben Preisen, die Sie bereits kennen, nur optimal zusammengestellt.</p>
 
   <!-- 01 — BEREITS UMGESETZT -->
   <section>
-    <h2><span class="n">01</span>Bereits erfolgreich umgesetzt</h2>
+    <h2><span class="n">01</span>Bereits umgesetzt</h2>
     <div class="box green">
-      <p style="margin-bottom:10px"><b>Live:</b> &nbsp;<a href="https://folix-lab.de">https://folix-lab.de</a></p>
+      <p style="margin-bottom:10px"><b>Online:</b> &nbsp;<a href="https://folix-lab.de">https://folix-lab.de</a></p>
       <div style="margin-bottom:12px">
         <span class="pill">2 Bereiche: Wrapping + Werbetechnik</span>
         <span class="pill">4 Sprachen</span>
-        <span class="pill">Mobile Responsive</span>
+        <span class="pill">Mobile Optimierung</span>
         <span class="pill">DSGVO</span>
       </div>
-      <p style="font-size:.9rem;border-top:1px solid rgba(255,255,255,.1);padding-top:12px"><b>Website:</b> <span class="strike">1.150 €</span> <b>500 €</b> <span style="color:var(--accent)">✓ Abgeschlossen</span></p>
+      <p style="font-size:.9rem;border-top:1px solid rgba(255,255,255,.1);padding-top:12px"><b>Website:</b> <span class="strike">1.150 €</span> <b>500 €</b> <span style="color:var(--accent)">✓ Bezahlt</span></p>
     </div>
   </section>
 
-  <!-- 02 — EINMALIGES SETUP -->
+  <!-- 02 — EINMALIGE EINRICHTUNG -->
   <section>
-    <h2><span class="n">02</span>Einmaliges Setup — Ihre Sichtbarkeit starten</h2>
-    <p class="lead">Die Website steht. Jetzt brauchen Sie Sichtbarkeit auf Google Maps und Instagram, damit Kunden Sie finden.</p>
+    <h2><span class="n">02</span>Einmalige Einrichtung — Sichtbarkeit starten</h2>
+    <p class="lead">Die Website steht, aber Google und Instagram sind noch leer. Das muss einmalig eingerichtet werden, damit der Kundenstrom beginnt.</p>
 
-    <div class="dir-grid">
-      <div class="dir-card">
-        <div class="dir-label">Nur Sichtbarkeit</div>
-        <div class="dir-name">Starter</div>
-        <div class="dir-price">690 €</div>
-        <ul style="margin-top:10px;margin-bottom:10px">
-          <li><b>Google Maps</b> für beide Bereiche (Wrapping + Werbetechnik)</li>
-          <li>Keyword-Recherche, Bewertungs-Strategie</li>
-        </ul>
-        <div class="dir-note">Minimal-Start: Beide Bereiche auf Google Maps sichtbar machen.</div>
-      </div>
+    <table>
+      <tr><th>Leistung</th><th></th><th style="text-align:right">Netto</th></tr>
+      <tr>
+        <td><b>Google-Profil — Vollständige Optimierung</b><span class="sub">Ihr Profil existiert bereits, ist aber nicht optimiert. Ich übernehme: SEO-Optimierung der Kategorien und Beschreibungen für „Car Wrapping München", Upload von professionellen Fotos + realen Arbeiten, Keyword-Recherche, Aufbau eines rechtssicheren Systems zur Sammlung echter Kundenbewertungen (QR-Karte + WhatsApp-Vorlage). Werbetechnik bleibt als zweiter Bereich auf der Website — Kunden gelangen dorthin über Ihr Google-Profil.</span></td>
+        <td></td><td class="price">490 €</td>
+      </tr>
+      <tr>
+        <td><b>Instagram Branding — Einmalige Einrichtung</b><span class="sub">Entwicklung eines einheitlichen visuellen Stils (Farben, Schriften, konsistenter Look). 6 Highlight-Cover, optimierte Bio mit Keywords, 3 Startbeiträge in Ihrem Stil. Danach wirkt Ihr Instagram wie eine professionelle Werkstatt.</span></td>
+        <td></td><td class="price">490 €</td>
+      </tr>
+    </table>
 
-      <div class="dir-card combo">
-        <div class="dir-badge">Empfehlung</div>
-        <div class="dir-label">Sichtbarkeit + Branding</div>
-        <div class="dir-name">Starter+</div>
-        <div class="dir-price">1.180 €</div>
-        <ul style="margin-top:10px;margin-bottom:10px">
-          <li><b>Google Maps</b> für beide Bereiche (690 €)</li>
-          <li><b>Instagram Branding</b> für 1 Profil: Vorlagen, Highlights, Bio, 3 Start-Posts (490 €)</li>
-        </ul>
-        <div class="dir-note">Ideal für Ihr Budget. Google Maps + professioneller Instagram-Auftritt.</div>
-      </div>
-
-      <div class="dir-card">
-        <div class="dir-label">Maximale Wirkung</div>
-        <div class="dir-name">Full Launch</div>
-        <div class="dir-price"><span class="old">1.870 €</span>1.790 €</div>
-        <div class="dir-save">Sie sparen 80 €</div>
-        <ul style="margin-top:10px;margin-bottom:10px">
-          <li><b>Google Maps</b> für beide Bereiche (690 €)</li>
-          <li><b>Instagram Branding</b> für beide Profile (590 €)</li>
-          <li><b>Promo-Video Kompakt:</b> 1 Drehtag + Schnitt (590 €)</li>
-        </ul>
-        <div class="dir-note">Das Komplett-Paket: Maps + Instagram + Video.</div>
-      </div>
+    <div class="sum">
+      <div class="sum-row"><span>Google-Profil</span><span class="sum-price">490 €</span></div>
+      <div class="sum-row"><span>Instagram Branding</span><span class="sum-price">490 €</span></div>
+      <div class="sum-row total"><span>Gesamt (einmalig)</span><span class="sum-price">980 €</span></div>
     </div>
   </section>
 
   <!-- 03 — MONATLICHE BETREUUNG -->
   <section>
-    <h2><span class="n">03</span>Monatliche Betreuung — 6-Monats-Vertrag</h2>
-    <p class="lead">Lokales SEO ist kein Sprint, sondern ein Marathon. Mit einer Mindestlaufzeit von <b>6 Monaten</b> geben wir Ihnen einen Vorteilspreis — und ausreichend Zeit, um nachweisbare Ergebnisse zu erzielen.</p>
+    <h2><span class="n">03</span>Monatliche Betreuung — 400 € / Monat</h2>
+    <p class="lead">Local SEO ist ein Marathon, kein Sprint. Mindestlaufzeit <b>6 Monate</b> — in dieser Zeit wird Google Sie stabil in den Top-Ergebnissen für München anzeigen. Die Zahlung erfolgt automatisch monatlich.</p>
 
     <div class="dir-grid">
-      <div class="dir-card">
-        <div class="dir-label">1 Bereich</div>
-        <div class="dir-name">Sichtbar</div>
-        <div class="dir-price">390 € <span class="per">/ Monat</span></div>
-        <div class="dir-save">Vertragsvorteil</div>
-        <ul style="margin-top:10px;margin-bottom:10px">
-          <li><b>Local SEO</b> für 1 Google-Profil</li>
-          <li>4 SEO-Beiträge / Monat</li>
-          <li>Bewertungs-Management</li>
-          <li>Website-Wartung (bis 1 Std.)</li>
-          <li>Monatlicher Report</li>
-        </ul>
-        <div class="dir-contract">6 × 390 € = <b>2.340 €</b> Gesamtlaufzeit<br>Ohne Vertrag: 450 €/Mon.</div>
-      </div>
-
       <div class="dir-card combo">
-        <div class="dir-badge">Empfehlung</div>
-        <div class="dir-label">2 Bereiche + Instagram</div>
-        <div class="dir-name">Dominant</div>
-        <div class="dir-price">690 € <span class="per">/ Monat</span></div>
-        <div class="dir-save">Bester ROI</div>
+        <div class="dir-badge">Ihr Paket</div>
+        <div class="dir-label">SEO + Website-Support</div>
+        <div class="dir-name">Local SEO</div>
+        <div class="dir-price">400 € <span class="per">/ Monat</span></div>
         <ul style="margin-top:10px;margin-bottom:10px">
-          <li><b>Local SEO</b> für beide Google-Profile</li>
-          <li>8 SEO-Beiträge / Monat (4 pro Profil)</li>
-          <li>Bewertungs-Management</li>
-          <li><b>Instagram-Content:</b> 4 Posts / Monat</li>
-          <li>Website-Wartung (bis 2 Std.)</li>
-          <li>15-Min. Strategie-Call / Monat</li>
-          <li>Monatlicher Report</li>
+          <li><b>4 SEO-Beiträge / Monat</b> im Google-Profil (Fotos Ihrer Arbeiten + Text mit Keywords)</li>
+          <li><b>On-Page SEO</b> — monatliche Aktualisierung der Website-Texte für aktuelle Suchanfragen</li>
+          <li><b>Bewertungsmanagement</b> — Antworten auf neue Bewertungen, Monitoring</li>
+          <li><b>Website-Support</b> — Upload neuer Fotos/Videos, technische Updates (bis 2 Std.)</li>
+          <li><b>Monatlicher Bericht</b> — Aufrufe, Anrufe, Routenanfragen + Wettbewerbsanalyse</li>
         </ul>
-        <div class="dir-contract">6 × 690 € = <b>4.140 €</b> Gesamtlaufzeit<br>Ohne Vertrag: 790 €/Mon.</div>
+        <div class="dir-note">Sie schicken mir Fotos fertiger Arbeiten per WhatsApp — ich veröffentliche sie auf Google und der Website. Sie müssen nichts tun.</div>
+        <div class="dir-contract">6 × 400 € = <b>2.400 €</b> Gesamtlaufzeit · nach 6 Mon. kündbar mit 30 Tagen Frist</div>
       </div>
 
       <div class="dir-card">
-        <div class="dir-label">Full Digital</div>
-        <div class="dir-name">Total</div>
-        <div class="dir-price">990 € <span class="per">/ Monat</span></div>
-        <div class="dir-save">Maximale Sichtbarkeit</div>
+        <div class="dir-label">Zum Vergleich: Einzeln</div>
+        <div class="dir-name">Ohne Paket</div>
+        <div class="dir-price" style="color:var(--ink3)">450 € <span class="per">/ Monat</span></div>
         <ul style="margin-top:10px;margin-bottom:10px">
-          <li><b>Local SEO</b> für beide Google-Profile</li>
-          <li>8 SEO-Beiträge / Monat</li>
-          <li>Bewertungs-Management</li>
-          <li><b>Instagram-Betreuung:</b> 6 Posts + Stories</li>
-          <li><b>2 Reels / Monat</b> (aus Ihrem Material)</li>
-          <li>Website-Wartung (bis 3 Std.)</li>
-          <li>30-Min. Strategie-Session / Monat</li>
-          <li>Erweiterter Report + Wettbewerber</li>
+          <li>Local SEO (1 Bereich): <b>350 €</b></li>
+          <li>Website-Support: <b>100 €</b></li>
+          <li>= 450 €/Mon. ohne Rabatt</li>
         </ul>
-        <div class="dir-contract">6 × 990 € = <b>5.940 €</b> Gesamtlaufzeit<br>Ohne Vertrag: 1.150 €/Mon.</div>
+        <div class="dir-note">Mit dem Paket sparen Sie 50 €/Mon. (300 € über 6 Monate).</div>
       </div>
     </div>
 
     <div class="box" style="padding:16px 20px;margin-top:16px">
-      <p style="font-size:.85rem;color:var(--ink2)"><b style="color:var(--accent)">Hinweis zum Vertrag:</b> Mindestlaufzeit 6 Monate, danach monatlich kündbar mit 30 Tagen Vorlauf. Ohne Vertrag gelten die regulären Einzelpreise.</p>
+      <p style="font-size:.85rem;color:var(--ink2)"><b style="color:var(--accent)">So funktioniert's:</b> Mindestvertrag 6 Monate. Die Zahlung erfolgt automatisch über Stripe (Karte oder SEPA-Lastschrift). Nach 6 Monaten — monatliche Verlängerung mit 30 Tagen Kündigungsfrist.</p>
     </div>
   </section>
 
-  <!-- 04 — VIDEO -->
+  <!-- 04 — AI VIDEO (NEU) -->
   <section>
-    <h2><span class="n">04</span>Video-Produktion — einzeln buchbar</h2>
+    <h2><span class="n">04</span>AI-Videocontent für Instagram <span class="new-badge">Neu</span></h2>
+    <p class="lead">Kurze, dynamische Clips für Reels und Stories, erstellt mit KI. Sehen beeindruckend aus, kosten einen Bruchteil einer echten Produktion. Ideal für regelmäßigen Content zwischen echten Fotos.</p>
+
     <table>
       <tr><th>Leistung</th><th></th><th style="text-align:right">Netto</th></tr>
       <tr>
-        <td><b>Promo-Video „Kompakt"</b> — 1 Drehtag München, Schnitt Website + 1 Reel<span class="sub">Professionelles Equipment, lizenzierte Musik.</span></td>
+        <td><b>AI Reel (1 Stück)</b> — dynamischer Clip 15–30 Sek.<span class="sub">Basierend auf Ihren Fotos oder meinen Prompts. Auswahl von Effekten, Musik, Text. Fertig zur Veröffentlichung auf Instagram/TikTok. Ideal für „Vorher/Nachher", Folienpräsentationen, Kamerafahrten um das Auto.</span></td>
+        <td></td><td class="price">90 €</td>
+      </tr>
+      <tr>
+        <td><b>Paket 4 AI Reels / Monat</b><span class="sub">Regelmäßiger Content für Instagram. 4 fertige Clips pro Monat — Ihr Profil bleibt immer aktiv und lebendig. Preis pro Reel sinkt auf 75 €.</span></td>
+        <td></td><td class="price">290 €/Mon.</td>
+      </tr>
+    </table>
+
+    <div class="box" style="padding:16px 20px">
+      <p style="font-size:.85rem;color:var(--ink2)"><b style="color:var(--lime)">Warum das günstig ist:</b> Ein echtes Reel (Anfahrt + Dreh + Schnitt) kostet 590 €. Ein AI-Reel sieht genauso beeindruckend aus, kostet aber <b>6× weniger</b>. Ideal für konstanten Content zwischen echten Produktionen.</p>
+    </div>
+  </section>
+
+  <!-- 05 — LIVE VIDEO -->
+  <section>
+    <h2><span class="n">05</span>Live-Videoproduktion — auf Anfrage</h2>
+    <p class="lead">Für die Momente, in denen echte Aufnahmen gebraucht werden: Folierungsprozess, fertiges Ergebnis, Werkstattatmosphäre.</p>
+    <table>
+      <tr><th>Leistung</th><th></th><th style="text-align:right">Netto</th></tr>
+      <tr>
+        <td><b>Promo-Video „Kompakt"</b> — 1 Drehtag, Schnitt für Website + 1 Reel<span class="sub">Professionelles Equipment, lizenzierte Musik. Anfahrt nach München.</span></td>
         <td></td><td class="price">590 €</td>
       </tr>
       <tr>
-        <td><b>Video-Paket „Full"</b> — 3 Drehtage (Vorher/Während/Nachher), YouTube + 2–3 Reels<span class="sub">Kompletter Prozess hochprofessionell dokumentiert.</span></td>
+        <td><b>Video-Paket „Full"</b> — 3 Drehtage, YouTube + 2–3 Reels<span class="sub">Der komplette Folierungsprozess dokumentiert. Von der Vorbereitung bis zum fertigen Ergebnis.</span></td>
         <td></td><td class="price">1.290 €</td>
       </tr>
-      <tr>
-        <td><b>Reels-Abonnement</b> — 2 fertige Reels/Monat<span class="sub">Dreh + Schnitt vor Ort. Instagram & TikTok.</span></td>
-        <td></td><td class="price">390 €/Mon.</td>
-      </tr>
     </table>
   </section>
 
-  <!-- 05 — DRITTKOSTEN -->
+  <!-- 06 — EXTERNE KOSTEN -->
   <section>
-    <h2><span class="n">05</span>Drittkosten (direkt an Anbieter)</h2>
+    <h2><span class="n">06</span>Externe Kosten (direkt an Anbieter)</h2>
     <table>
       <tr><td>Domain <b>folix-lab.de</b><span class="sub">Bereits vorhanden</span></td><td></td><td class="price">~6–12 €/Jahr</td></tr>
-      <tr><td>Profi-Mail — <b>Google Workspace</b><span class="sub">Optional</span></td><td></td><td class="price">~6–14 €/Mon.</td></tr>
-      <tr><td>Hosting<span class="sub">Vercel / Cloudflare</span></td><td></td><td class="price">0 €</td></tr>
-      <tr><td>Google-Profil (Maps)</td><td></td><td class="price">Kostenlos</td></tr>
+      <tr><td>Prof. E-Mail — <b>Google Workspace</b><span class="sub">Optional</span></td><td></td><td class="price">~6–14 €/Mon.</td></tr>
+      <tr><td>Hosting<span class="sub">Vercel — bereits eingerichtet</span></td><td></td><td class="price">0 €</td></tr>
+      <tr><td>Google-Profil (Maps)</td><td></td><td class="price">kostenlos</td></tr>
     </table>
   </section>
 
-  <!-- 06 — WAS ICH BRAUCHE -->
+  <!-- 07 — ZUSAMMENFASSUNG -->
   <section>
-    <h2><span class="n">06</span>Was ich von Ihnen brauche</h2>
+    <h2><span class="n">07</span>Zusammenfassung Ihres Budgets</h2>
+
+    <div class="sum">
+      <p style="font-family:var(--mf);font-size:.65rem;text-transform:uppercase;letter-spacing:.12em;color:var(--ink3);margin-bottom:10px">Einmaliger Start</p>
+      <div class="sum-row"><span>Google-Profil (Optimierung)</span><span class="sum-price">490 €</span></div>
+      <div class="sum-row"><span>Instagram Branding</span><span class="sum-price">490 €</span></div>
+      <div class="sum-row total"><span>Gesamt einmalig</span><span class="sum-price">980 €</span></div>
+    </div>
+
+    <div class="sum" style="margin-top:12px">
+      <p style="font-family:var(--mf);font-size:.65rem;text-transform:uppercase;letter-spacing:.12em;color:var(--ink3);margin-bottom:10px">Monatlich (Vertrag 6 Mon.)</p>
+      <div class="sum-row"><span>Local SEO + Website-Support</span><span class="sum-price">400 €/Mon.</span></div>
+      <div class="sum-row" style="font-size:.82rem;color:var(--ink3)"><span>Über 6 Monate</span><span class="sum-price" style="color:var(--ink3)">2.400 €</span></div>
+    </div>
+
+    <div class="box" style="padding:16px 20px;margin-top:16px">
+      <p style="font-size:.85rem;color:var(--ink2)"><b style="color:var(--accent)">AI-Video und Live-Produktion</b> — werden auf Wunsch jederzeit dazugebucht. Nicht im Basispaket enthalten, damit Ihr monatliches Budget stabil bleibt.</p>
+    </div>
+  </section>
+
+  <!-- 08 — WAS ICH BRAUCHE -->
+  <section>
+    <h2><span class="n">08</span>Was ich von Ihnen brauche</h2>
     <ul>
       <li><b>Gewerbeanmeldung</b> + <b>Besteuerungsform</b> (Kleinunternehmer / Regelbesteuerung)</li>
-      <li>Telefonnummer & Social-Media-Links</li>
-      <li>Erste Fotos/Videos Ihrer Projekte</li>
+      <li>Zugang zum <b>Google-Profil</b> (oder Einladung als Manager)</li>
+      <li>Zugang zum <b>Instagram-Account</b></li>
+      <li>Erste <b>Fotos/Videos</b> Ihrer realen Projekte</li>
     </ul>
   </section>
 
   <a class="cta" href="https://folix-lab.de">Website ansehen →</a>
 
   <div class="foot">
-    <p>Alle Preise in <b>EUR, netto</b>. Gem. § 19 UStG wird keine Umsatzsteuer erhoben.</p>
-    <p>Gültig bis <b>04.07.2026</b>. Drittkosten werden direkt an die Anbieter gezahlt.</p>
+    <p>Alle Preise in <b>EUR, netto</b>. Gemäß § 19 UStG wird keine USt. erhoben.</p>
+    <p>Gültig bis <b>06.07.2026</b>. Externe Kosten werden direkt an die Anbieter bezahlt.</p>
     <p>© 2026 · Vasyl Kolos · Erstellt für FOLIX-LAB, München.</p>
   </div>
 

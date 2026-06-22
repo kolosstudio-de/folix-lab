@@ -46,7 +46,7 @@
   td.price{text-align:right;font-family:var(--df);white-space:nowrap;color:var(--ink)}
   td .sub{display:block;font-size:.8rem;color:var(--ink3);margin-top:3px;line-height:1.5}
   .strike{color:var(--ink3);text-decoration:line-through;font-size:.85em;margin-right:6px}
-  .dir-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:16px 0}
+  .dir-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
   .dir-card{border:1px solid var(--line);border-radius:14px;padding:18px;background:var(--bg1);position:relative}
   .dir-card.combo{border-color:rgba(33,227,154,.35);background:linear-gradient(135deg,rgba(8,207,142,.07),rgba(196,242,74,.03))}
   .dir-card .dir-label{font-family:var(--mf);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
@@ -64,6 +64,11 @@
   .pill{display:inline-block;font-family:var(--mf);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border:1px solid var(--line2);border-radius:100px;color:var(--ink2);margin:2px}
   .cta{margin-top:14px;padding:14px 20px;border-radius:12px;background:var(--grad);color:#06120c;font-weight:700;display:inline-block;font-family:var(--df);text-decoration:none}
   .foot{margin-top:50px;padding-top:24px;border-top:1px solid var(--line);font-size:.8rem;color:var(--ink3);line-height:1.8}
+  .sum{margin-top:20px;border:1px solid rgba(33,227,154,.35);border-radius:16px;padding:20px 24px;background:linear-gradient(135deg,rgba(8,207,142,.06),rgba(196,242,74,.02))}
+  .sum-row{display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;font-size:.92rem}
+  .sum-row.total{border-top:1px solid var(--line);margin-top:8px;padding-top:12px;font-weight:700;font-size:1rem}
+  .sum-row .sum-price{font-family:var(--df);color:var(--accent);white-space:nowrap}
+  .new-badge{display:inline-block;font-family:var(--mf);font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border-radius:4px;background:rgba(196,242,74,.15);color:var(--lime);margin-left:6px;vertical-align:middle}
   @media(max-width:680px){.parties{grid-template-columns:1fr}.dir-grid{grid-template-columns:1fr}.wrap{padding:32px 22px 60px}}
 </style>
 </head>
@@ -81,8 +86,8 @@
         <span class="pill" style="border-color:var(--accent);color:var(--accent);font-weight:600;margin:2px">UA</span>
       </div>
       <b>ПРОПОЗИЦІЯ</b> № FL-2026-003<br />
-      Дата: 20.06.2026<br />
-      Дійсна до: <b>04.07.2026</b>
+      Дата: 22.06.2026<br />
+      Дійсна до: <b>06.07.2026</b>
     </div>
   </div>
 
@@ -106,13 +111,13 @@
     </div>
   </div>
 
-  <span class="ey">Сайт · Відео · Локальний маркетинг</span>
-  <h1 class="title">Ваша цифрова <span class="grad">видимість</span> у Мюнхені.</h1>
-  <p class="lead">На основі нашої розмови я підготував пропозицію під ваші пріоритети та бюджет. Усі ціни ідентичні попередній пропозиції — тут вони лише оптимально зібрані в пакети.</p>
+  <span class="ey">Сайт · Маркетинг · Контент</span>
+  <h1 class="title">Наступний крок: <span class="grad">видимість</span> у Мюнхені.</h1>
+  <p class="lead">Сайт працює. Тепер потрібно, щоб клієнти вас знаходили. Ця пропозиція зібрана під ваш бюджет — з тими ж цінами, що ви вже бачили, просто оптимально упаковані.</p>
 
   <!-- 01 — ВЖЕ РЕАЛІЗОВАНО -->
   <section>
-    <h2><span class="n">01</span>Вже успішно реалізовано</h2>
+    <h2><span class="n">01</span>Вже реалізовано</h2>
     <div class="box green">
       <p style="margin-bottom:10px"><b>Онлайн:</b> &nbsp;<a href="https://folix-lab.de">https://folix-lab.de</a></p>
       <div style="margin-bottom:12px">
@@ -121,155 +126,154 @@
         <span class="pill">Мобільна адаптація</span>
         <span class="pill">DSGVO</span>
       </div>
-      <p style="font-size:.9rem;border-top:1px solid rgba(255,255,255,.1);padding-top:12px"><b>Сайт:</b> <span class="strike">1.150 €</span> <b>500 €</b> <span style="color:var(--accent)">✓ Завершено</span></p>
+      <p style="font-size:.9rem;border-top:1px solid rgba(255,255,255,.1);padding-top:12px"><b>Сайт:</b> <span class="strike">1.150 €</span> <b>500 €</b> <span style="color:var(--accent)">✓ Оплачено</span></p>
     </div>
   </section>
 
   <!-- 02 — РАЗОВЕ НАЛАШТУВАННЯ -->
   <section>
-    <h2><span class="n">02</span>Разове налаштування — запуск видимості</h2>
-    <p class="lead">Сайт є. Тепер потрібна видимість на Google Maps та Instagram, щоб клієнти вас знаходили.</p>
+    <h2><span class="n">02</span>Разове налаштування — старт видимості</h2>
+    <p class="lead">Сайт є, але Google і Instagram поки що порожні. Ось що потрібно зробити один раз, щоб запустити потік клієнтів.</p>
 
-    <div class="dir-grid">
-      <div class="dir-card">
-        <div class="dir-label">Лише видимість</div>
-        <div class="dir-name">Starter</div>
-        <div class="dir-price">690 €</div>
-        <ul style="margin-top:10px;margin-bottom:10px">
-          <li><b>Google Maps</b> для обох напрямків (Wrapping + Werbetechnik)</li>
-          <li>Keyword-дослідження, стратегія відгуків</li>
-        </ul>
-        <div class="dir-note">Мінімальний старт: обидва напрямки одразу на Google Maps.</div>
-      </div>
+    <table>
+      <tr><th>Послуга</th><th></th><th style="text-align:right">Нетто</th></tr>
+      <tr>
+        <td><b>Google-профіль — повна оптимізація</b><span class="sub">Ваш профіль вже існує, але не налаштований. Я роблю: SEO-оптимізація категорій і описів під «Car Wrapping München», завантаження професійних фото + реальних робіт, keyword-дослідження, створення системи збору реальних відгуків (QR-картка + WhatsApp-шаблон для клієнтів). Werbetechnik буде другим напрямком на сайті — клієнти потраплятимуть туди через Google-профіль.</span></td>
+        <td></td><td class="price">490 €</td>
+      </tr>
+      <tr>
+        <td><b>Instagram Branding — разове налаштування</b><span class="sub">Розробка фірмового візуального стилю (кольори, шрифти, єдиний look). 6 обкладинок для Highlights, оптимізована Bio з ключовими словами, 3 стартові пости у вашому стилі. Після цього ваш Instagram виглядатиме як професійне ательє.</span></td>
+        <td></td><td class="price">490 €</td>
+      </tr>
+    </table>
 
-      <div class="dir-card combo">
-        <div class="dir-badge">Рекомендація</div>
-        <div class="dir-label">Видимість + Брендинг</div>
-        <div class="dir-name">Starter+</div>
-        <div class="dir-price">1.180 €</div>
-        <ul style="margin-top:10px;margin-bottom:10px">
-          <li><b>Google Maps</b> для обох напрямків (690 €)</li>
-          <li><b>Instagram Branding</b> для 1 профілю: шаблони, хайлайтс, біо, 3 стартових пости (490 €)</li>
-        </ul>
-        <div class="dir-note">Ідеально під ваш бюджет. Google Maps + професійний Instagram.</div>
-      </div>
-
-      <div class="dir-card">
-        <div class="dir-label">Максимальний ефект</div>
-        <div class="dir-name">Full Launch</div>
-        <div class="dir-price"><span class="old">1.870 €</span>1.790 €</div>
-        <div class="dir-save">Економія 80 €</div>
-        <ul style="margin-top:10px;margin-bottom:10px">
-          <li><b>Google Maps</b> для обох напрямків (690 €)</li>
-          <li><b>Instagram Branding</b> для обох профілів (590 €)</li>
-          <li><b>Promo-відео Компакт:</b> 1 знімальний день + монтаж (590 €)</li>
-        </ul>
-        <div class="dir-note">Повний пакет: Maps + Instagram + Відео.</div>
-      </div>
+    <div class="sum">
+      <div class="sum-row"><span>Google-профіль</span><span class="sum-price">490 €</span></div>
+      <div class="sum-row"><span>Instagram Branding</span><span class="sum-price">490 €</span></div>
+      <div class="sum-row total"><span>Разом (разово)</span><span class="sum-price">980 €</span></div>
     </div>
   </section>
 
   <!-- 03 — ЩОМІСЯЧНИЙ СУПРОВІД -->
   <section>
-    <h2><span class="n">03</span>Щомісячний супровід — контракт на 6 місяців</h2>
-    <p class="lead">Локальне SEO — це не спринт, а марафон. З мінімальним терміном <b>6 місяців</b> ви отримуєте вигідну ціну — і достатньо часу, щоб побачити реальні результати.</p>
+    <h2><span class="n">03</span>Щомісячний супровід — 400 € / міс</h2>
+    <p class="lead">Локальне SEO — це марафон, не спринт. Мінімальний термін <b>6 місяців</b> — за цей час Google почне стабільно показувати вас у топі Мюнхена. Оплата списується автоматично раз на місяць.</p>
 
     <div class="dir-grid">
-      <div class="dir-card">
-        <div class="dir-label">1 напрямок</div>
-        <div class="dir-name">Sichtbar</div>
-        <div class="dir-price">390 € <span class="per">/ міс</span></div>
-        <div class="dir-save">Вигода за контракт</div>
-        <ul style="margin-top:10px;margin-bottom:10px">
-          <li><b>Local SEO</b> для 1 Google-профілю</li>
-          <li>4 SEO-пости / місяць</li>
-          <li>Управління відгуками</li>
-          <li>Підтримка сайту (до 1 год)</li>
-          <li>Щомісячний звіт</li>
-        </ul>
-        <div class="dir-contract">6 × 390 € = <b>2.340 €</b> за весь термін<br>Без контракту: 450 €/міс</div>
-      </div>
-
       <div class="dir-card combo">
-        <div class="dir-badge">Рекомендація</div>
-        <div class="dir-label">2 напрямки + Instagram</div>
-        <div class="dir-name">Dominant</div>
-        <div class="dir-price">690 € <span class="per">/ міс</span></div>
-        <div class="dir-save">Найкращий ROI</div>
+        <div class="dir-badge">Ваш пакет</div>
+        <div class="dir-label">SEO + Підтримка сайту</div>
+        <div class="dir-name">Local SEO</div>
+        <div class="dir-price">400 € <span class="per">/ міс</span></div>
         <ul style="margin-top:10px;margin-bottom:10px">
-          <li><b>Local SEO</b> для обох Google-профілів</li>
-          <li>8 SEO-постів / місяць (4 на кожний)</li>
-          <li>Управління відгуками</li>
-          <li><b>Instagram-контент:</b> 4 пости / місяць</li>
-          <li>Підтримка сайту (до 2 год)</li>
-          <li>15-хв стратегічний дзвінок / місяць</li>
-          <li>Щомісячний звіт</li>
+          <li><b>4 SEO-пости / місяць</b> у Google-профілі (фото ваших робіт + текст з ключовими словами)</li>
+          <li><b>On-Page SEO</b> — щомісячне оновлення текстів на сайті під актуальні пошукові запити</li>
+          <li><b>Управління відгуками</b> — відповіді на нові відгуки, моніторинг</li>
+          <li><b>Підтримка сайту</b> — завантаження нових фото/відео, технічні оновлення (до 2 год)</li>
+          <li><b>Щомісячний звіт</b> — перегляди, дзвінки, маршрути + аналіз конкурентів</li>
         </ul>
-        <div class="dir-contract">6 × 690 € = <b>4.140 €</b> за весь термін<br>Без контракту: 790 €/міс</div>
+        <div class="dir-note">Ви скидаєте мені фото готових робіт у WhatsApp — я сам публікую їх у Google і на сайті. Вам не потрібно нічого робити.</div>
+        <div class="dir-contract">6 × 400 € = <b>2.400 €</b> за весь термін · після 6 міс — розірвання за 30 днів</div>
       </div>
 
       <div class="dir-card">
-        <div class="dir-label">Full Digital</div>
-        <div class="dir-name">Total</div>
-        <div class="dir-price">990 € <span class="per">/ міс</span></div>
-        <div class="dir-save">Максимальна видимість</div>
+        <div class="dir-label">Для порівняння: окремо</div>
+        <div class="dir-name">Без пакету</div>
+        <div class="dir-price" style="color:var(--ink3)">450 € <span class="per">/ міс</span></div>
         <ul style="margin-top:10px;margin-bottom:10px">
-          <li><b>Local SEO</b> для обох Google-профілів</li>
-          <li>8 SEO-постів / місяць</li>
-          <li>Управління відгуками</li>
-          <li><b>Instagram-ведення:</b> 6 постів + Stories</li>
-          <li><b>2 Reels / місяць</b> (із вашого матеріалу)</li>
-          <li>Підтримка сайту (до 3 год)</li>
-          <li>30-хв стратегічна сесія / місяць</li>
-          <li>Розширений звіт + конкуренти</li>
+          <li>Local SEO (1 напрямок): <b>350 €</b></li>
+          <li>Підтримка сайту: <b>100 €</b></li>
+          <li>= 450 €/міс без знижки</li>
         </ul>
-        <div class="dir-contract">6 × 990 € = <b>5.940 €</b> за весь термін<br>Без контракту: 1.150 €/міс</div>
+        <div class="dir-note">З пакетом ви економите 50 €/міс (300 € за 6 місяців).</div>
       </div>
     </div>
 
     <div class="box" style="padding:16px 20px;margin-top:16px">
-      <p style="font-size:.85rem;color:var(--ink2)"><b style="color:var(--accent)">Щодо контракту:</b> Мінімальний термін 6 місяців, далі — щомісячне розірвання за 30 днів. Без контракту діють звичайні ціни (вказані в кожній картці).</p>
+      <p style="font-size:.85rem;color:var(--ink2)"><b style="color:var(--accent)">Як це працює:</b> Мінімальний контракт 6 місяців. Оплата автоматично через Stripe (карта або SEPA). Після 6 місяців — продовження щомісяця зі скасуванням за 30 днів.</p>
     </div>
   </section>
 
-  <!-- 04 — ВІДЕО -->
+  <!-- 04 — AI ВІДЕО (НОВЕ) -->
   <section>
-    <h2><span class="n">04</span>Відео-продакшн — окремо</h2>
+    <h2><span class="n">04</span>AI-відеоконтент для Instagram <span class="new-badge">Нове</span></h2>
+    <p class="lead">Короткі динамічні ролики для Reels та Stories, створені за допомогою AI. Виглядають ефектно, коштують у рази менше за живу зйомку. Ідеально для регулярного контенту між реальними фото.</p>
+
     <table>
       <tr><th>Послуга</th><th></th><th style="text-align:right">Нетто</th></tr>
       <tr>
-        <td><b>Promo-відео «Компакт»</b> — 1 знімальний день, монтаж для сайту + 1 Reel<span class="sub">Професійне обладнання, ліцензійна музика.</span></td>
+        <td><b>AI Reel (1 штука)</b> — динамічний ролик 15–30 сек<span class="sub">На базі ваших фото або моїх промтів. Підбір ефектів, музики, тексту. Готовий до публікації в Instagram/TikTok. Ідеально для «до/після», презентації плівок, руху камери навколо авто.</span></td>
+        <td></td><td class="price">90 €</td>
+      </tr>
+      <tr>
+        <td><b>Пакет 4 AI Reels / місяць</b><span class="sub">Регулярний контент для Instagram. 4 готові ролики щомісяця — ваш профіль завжди живий і активний. Ціна за 1 ролик знижується до 75 €.</span></td>
+        <td></td><td class="price">290 €/міс</td>
+      </tr>
+    </table>
+
+    <div class="box" style="padding:16px 20px">
+      <p style="font-size:.85rem;color:var(--ink2)"><b style="color:var(--lime)">Чому це вигідно:</b> Живий Reel (виїзд + зйомка + монтаж) коштує 590 €. AI-ролик виглядає не менш ефектно, але коштує <b>в 6 разів менше</b>. Ідеально для постійного потоку контенту між реальними зйомками.</p>
+    </div>
+  </section>
+
+  <!-- 05 — ВІДЕО ЖИВЕ (ОКРЕМО) -->
+  <section>
+    <h2><span class="n">05</span>Живий відео-продакшн — на замовлення</h2>
+    <p class="lead">Для тих моментів, коли потрібна реальна зйомка: процес оклейки, готовий результат, атмосфера майстерні.</p>
+    <table>
+      <tr><th>Послуга</th><th></th><th style="text-align:right">Нетто</th></tr>
+      <tr>
+        <td><b>Promo-відео «Компакт»</b> — 1 знімальний день, монтаж для сайту + 1 Reel<span class="sub">Професійне обладнання, ліцензійна музика. Виїзд у Мюнхен.</span></td>
         <td></td><td class="price">590 €</td>
       </tr>
       <tr>
-        <td><b>Відео-пакет «Full»</b> — 3 знімальні дні, YouTube + 2–3 Reels<span class="sub">Повний процес оклейки задокументовано.</span></td>
+        <td><b>Відео-пакет «Full»</b> — 3 знімальні дні, YouTube + 2–3 Reels<span class="sub">Повний процес оклейки задокументовано. Від підготовки до готового результату.</span></td>
         <td></td><td class="price">1.290 €</td>
-      </tr>
-      <tr>
-        <td><b>Reels-абонемент</b> — 2 Reels/місяць<span class="sub">Зйомка + монтаж. Instagram & TikTok.</span></td>
-        <td></td><td class="price">390 €/міс</td>
       </tr>
     </table>
   </section>
 
-  <!-- 05 — СТОРОННІ ВИТРАТИ -->
+  <!-- 06 — СТОРОННІ ВИТРАТИ -->
   <section>
-    <h2><span class="n">05</span>Сторонні витрати (платите напряму)</h2>
+    <h2><span class="n">06</span>Сторонні витрати (платите напряму)</h2>
     <table>
       <tr><td>Домен <b>folix-lab.de</b><span class="sub">Вже є</span></td><td></td><td class="price">~6–12 €/рік</td></tr>
       <tr><td>Проф-пошта — <b>Google Workspace</b><span class="sub">Опціонально</span></td><td></td><td class="price">~6–14 €/міс</td></tr>
-      <tr><td>Хостинг<span class="sub">Vercel / Cloudflare</span></td><td></td><td class="price">0 €</td></tr>
+      <tr><td>Хостинг<span class="sub">Vercel — вже налаштовано</span></td><td></td><td class="price">0 €</td></tr>
       <tr><td>Google-профіль (Maps)</td><td></td><td class="price">безкоштовно</td></tr>
     </table>
   </section>
 
-  <!-- 06 — ЩО ПОТРІБНО -->
+  <!-- 07 — ПІДСУМОК -->
   <section>
-    <h2><span class="n">06</span>Що потрібно від вас</h2>
+    <h2><span class="n">07</span>Підсумок вашого бюджету</h2>
+
+    <div class="sum">
+      <p style="font-family:var(--mf);font-size:.65rem;text-transform:uppercase;letter-spacing:.12em;color:var(--ink3);margin-bottom:10px">Разовий запуск</p>
+      <div class="sum-row"><span>Google-профіль (оптимізація)</span><span class="sum-price">490 €</span></div>
+      <div class="sum-row"><span>Instagram Branding</span><span class="sum-price">490 €</span></div>
+      <div class="sum-row total"><span>Разом разово</span><span class="sum-price">980 €</span></div>
+    </div>
+
+    <div class="sum" style="margin-top:12px">
+      <p style="font-family:var(--mf);font-size:.65rem;text-transform:uppercase;letter-spacing:.12em;color:var(--ink3);margin-bottom:10px">Щомісячно (контракт 6 міс)</p>
+      <div class="sum-row"><span>Local SEO + Підтримка сайту</span><span class="sum-price">400 €/міс</span></div>
+      <div class="sum-row" style="font-size:.82rem;color:var(--ink3)"><span>За 6 місяців</span><span class="sum-price" style="color:var(--ink3)">2.400 €</span></div>
+    </div>
+
+    <div class="box" style="padding:16px 20px;margin-top:16px">
+      <p style="font-size:.85rem;color:var(--ink2)"><b style="color:var(--accent)">AI-відео та живий продакшн</b> — додаються за бажанням у будь-який момент. Не входять у базовий пакет, щоб ваш щомісячний бюджет залишався стабільним.</p>
+    </div>
+  </section>
+
+  <!-- 08 — ЩО ПОТРІБНО -->
+  <section>
+    <h2><span class="n">08</span>Що потрібно від вас</h2>
     <ul>
       <li><b>Gewerbeanmeldung</b> + <b>форма оподаткування</b> (Kleinunternehmer / Regelbesteuerung)</li>
-      <li>Номер телефону та посилання на соцмережі</li>
-      <li>Перші фото/відео ваших проектів</li>
+      <li>Доступ до <b>Google-профілю</b> (або запрошення як менеджера)</li>
+      <li>Доступ до <b>Instagram-акаунту</b></li>
+      <li>Перші <b>фото/відео</b> ваших реальних проєктів</li>
     </ul>
   </section>
 
@@ -277,7 +281,7 @@
 
   <div class="foot">
     <p>Усі ціни в <b>EUR, нетто</b>. Згідно § 19 UStG ПДВ не нараховується.</p>
-    <p>Дійсна до <b>04.07.2026</b>. Сторонні витрати оплачуються напряму провайдерам.</p>
+    <p>Дійсна до <b>06.07.2026</b>. Сторонні витрати оплачуються напряму провайдерам.</p>
     <p>© 2026 · Vasyl Kolos · Підготовлено для FOLIX-LAB, Мюнхен.</p>
   </div>
 
