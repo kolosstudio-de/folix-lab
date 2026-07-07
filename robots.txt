@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://folix-lab.de/sitemap.xml
+<!-- deploy check 2026-07-07T09:17:35Z -->
