@@ -62,14 +62,6 @@
       const open = lang.classList.toggle("is-open");
       btn.setAttribute("aria-expanded", String(open));
     });
-    $$("[data-set-lang]", lang).forEach((li) =>
-      li.addEventListener("click", () => {
-        const code = li.getAttribute("data-set-lang");
-        if (window.FOLIX_setLang) window.FOLIX_setLang(code);
-        lang.classList.remove("is-open");
-        btn.setAttribute("aria-expanded", "false");
-      })
-    );
     document.addEventListener("click", (e) => {
       if (!lang.contains(e.target)) { lang.classList.remove("is-open"); btn.setAttribute("aria-expanded", "false"); }
     });
@@ -317,7 +309,7 @@
       });
       
       // Basic i18n support for the cookie banner
-      const savedLang = localStorage.getItem('FOLIX_LANG') || 'de';
+      const savedLang = document.documentElement.getAttribute('data-lang') || 'de';
       const textEl = banner.querySelector('.cookie-banner__text');
       
       if (savedLang === 'de') {
