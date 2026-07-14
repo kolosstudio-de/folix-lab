@@ -402,7 +402,11 @@ a.contact__v:hover{color:var(--aqua)}
 .footer__top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.6rem;padding-bottom:clamp(32px,5vw,56px);border-bottom:1px solid var(--line)}
 .footer__logo{display:flex;align-items:center;gap:.6rem;font-family:var(--font-display);font-size:1.4rem;font-weight:600}
 .footer__logo .logo{width:30px;height:30px}
+.footer__meta{display:flex;flex-direction:column;gap:.9rem;align-items:flex-start}
 .footer__tag{color:var(--ink-2);max-width:30ch;font-size:.95rem}
+.footer__social{display:flex;gap:.7rem}
+.footer__social-link{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;border:1px solid var(--line-2);color:var(--ink-2);transition:color .3s,border-color .3s,transform .3s}
+.footer__social-link:hover{color:var(--accent);border-color:var(--accent);transform:translateY(-2px)}
 .footer__bottom{display:flex;flex-wrap:wrap;gap:1.2rem 2.4rem;align-items:center;justify-content:space-between;padding-top:2rem}
 .footer__nav,.footer__legal{display:flex;gap:1.6rem;flex-wrap:wrap;font-size:.88rem}
 .footer__nav a,.footer__legal a{color:var(--ink-2);transition:color .3s}
